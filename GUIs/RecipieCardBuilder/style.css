@@ -1,0 +1,132 @@
+:root {
+    --darkPurple: #55484f;
+    --lightPurple: #a39193;
+    --dark-rose: #aa6f73;
+    --lightPink: #eea990;
+    --yellowish: #f6e0b5;
+}
+html { 
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--darkPurple);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+    min-width: 600px;
+    min-height: 100vh;
+    font-size: 25px;
+} 
+#DeleteMessage{
+    display: none;
+}
+.space{
+    margin: 20px;
+}
+.name{
+    color: black;
+    font-weight: 400;
+    display: flex;
+    font-weight: 100;
+}
+.name>input {
+    flex: 1;
+    border-radius: 16px;
+    border: 2px solid var(--lightPink);
+    background-color: white;
+    padding: 15px; 
+}
+.add { 
+    display: flex; 
+    margin: 3px;
+    font-weight: 100;
+} 
+
+.add>input { 
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    flex: 1; 
+    border-top-left-radius: 16px; 
+    border-bottom-left-radius: 16px; 
+    border-left: 1px solid var(--lightPink);
+    border-top: 1px solid var(--lightPink); 
+    border-bottom: 1px solid var(--lightPink); 
+    border-right: none; 
+    padding-left: 16px; 
+} 
+
+.add>button { 
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border: 1px solid var(--lightPink); 
+    border-top-right-radius: 16px; 
+    border-bottom-right-radius: 16px; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+} 
+
+.add>button:hover {
+    background-color: var(--lightPink);
+    border-color: var(--dark-rose);
+  }
+  .add>button:focus,
+  .add>button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  .list{
+    border: 2px dashed var(--lightPink);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 300;
+  }
+
+.bottomButtons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.otherButtons {
+    color: black;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: var(--lightPink);
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin: 3px;
+  }
+  .otherButtons:hover {
+    border-color: var(--dark-rose);
+  }
+  .otherButtons:focus,
+  .otherButtons:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  .ingredient-item{
+    background-color: var(--dark-rose);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+  }
+  .ingredient-item:hover{
+    background-color: var(--lightPink);
+  }
+  .instruction-item{
+    background-color: var(--dark-rose);
+    border-radius: 4px;
+    padding: 4px;
+    margin: 4px;
+  }
+  .instruction-item:hover{
+    background-color: var(--lightPink);
+  }

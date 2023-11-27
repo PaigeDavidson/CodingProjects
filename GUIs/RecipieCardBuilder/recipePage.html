@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="buildRecipe.js" defer></script>
+    <script src="writeRecipeToFile.js" defer></script>
+</head>
+    <h1>World Recipeace Recipe Builder</h1>
+<body>
+    <div id="DeleteMessage" aria-live="polite" aria-atomic="true"></div>
+    <main> 
+        <div class="name"> 
+            <label for="recipeName"></label>
+            <input type="text" id="recipeName" placeholder="Recipe title"  aria-label="Recipe Name Input"/>
+        </div> 
+
+        <div class="space"></div>
+
+        <div class="add"> 
+            <input type="text" id="ingredient" placeholder="ingredient" aria-label="Ingredient input. Type and Hit Enter to save an Ingredient"/><button id="addIngredient">Add</button> 
+        </div> 
+
+        <div class="list">
+            <section id="ingredient-items" aria-placeholder="Ingredients will Appear Here"> 
+                <div id="placeholder1" class="placeholder">
+                    <label>Ingredients will Appear Here</label>
+                </div>
+            </section> 
+        </div>
+
+        <div class="space"></div>
+
+        <div class="add"> 
+            <input type="text" id="instruction" placeholder="instruction" aria-label="Instruction Input. Type and Hit Enter To Save an Instruction"/><button id="addInstruction">Add</button> 
+        </div> 
+
+        <div class="list">
+            <section id="instruction-items" aria-placeholder="Instructions will appear here"> 
+                <div id = "innerElements">
+                    <div id="placeholder1" class="placeholder">
+                        <label>Instructions will Appear Here</label>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <div class="space"></div>
+
+        <div class="bottomButtons">
+            <button id="reset" class="otherButtons" aria-label="press enter to Reset">Reset</button>
+            <button id="save" class="otherButtons" aria-label="pres enter to save Recipe">Save Recipe Card</button>
+        </div>
+    </main> 
+    
+</body>
+</html>
