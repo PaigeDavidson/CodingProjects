@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="navbar.js" defer></script>
+    <title>navbar</title>
+</head>
+    <h1>Navbar</h1>
+<body>
+    <div class="sidenav">
+        <a href="/Users/user/CSSComponentLibrary/home.html">Home</a>
+        <a href="/Users/user/CSSComponentLibrary/navbar.html">Navbar</a>
+        <a href="/Users/user/CSSComponentLibrary/navigationDrawer.html">Navigation Drawer</a>
+        <a href="/Users/user/CSSComponentLibrary/button.html">Button</a>
+        <a href="/Users/user/CSSComponentLibrary/FAB.html">Floating Action Button (FAB)</a>
+        <a href="/Users/user/CSSComponentLibrary/imageCarousel.html">Image Carousel</a>
+        <a href="/Users/user/CSSComponentLibrary/loadingSpinners.html">Loading Spinners</a>
+    </div>
+    <div class="codeBlocks">
+        <h2>Example</h2>
+        <nav class="navbar">
+        <div class="nav-header">
+            <button class="icon-button" id="nav-button">
+                <span class="material-icons">menu</span>
+            </button>
+            <h2>Your Title Here</h2>
+        </div>
+        <div class="links">
+            <a class="navLink" href="#">Link 1</a>
+            <a class="navLink" href="#">Link 2</a>
+            <a class="navLink" href="#">Link 3</a>
+            <a class="navLink" href="#">Link 4</a>
+        </div>
+        </nav>
+        <h2>Description</h2>
+        <div class="code">
+            <p class="paragraph">
+                This is a navigation bar meant to be fixed to the top of a web page. 
+            </p>
+            <p class="paragraph">
+                Up to four links can be added to the bar by replacing the '#' in the links div in the HTML with a url of your own.   
+            </p>
+            <p class="paragraph"> 
+                You can add any icon to the button you would like by changing the material icons 'add' to the name of 
+                any icon you find at: <a class = "googleLink" href="https://fonts.google.com/icons">Google Material Icons Site</a>
+            </p>
+            <p class="paragraph"> 
+                The colors can be changed by changing the colors in the CSS file in the :root{} section. 
+            </p>
+            <p class="paragraph"> 
+                In addition, you can also change the website title by replacing the 'Your Title Here' text with text of your own. 
+            </p>
+            <p class="paragraph"> 
+                It is important to remember to link the Google stylesheet (for the icons), your own CSS file, and your own
+                javaScript file at the top of your HTML file in order for the component to work properly.
+            </p>
+        </div>
+        <div>
+            <h2>HTML</h2>
+            <pre class="code" id="navbar-html"></pre>
+        </div>
+        <div>
+            <h2>CSS</h2>
+            <pre class="code" id="navbar-css">
+:root{
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    background-color: var(--pink); 
+    color: var(--cream);
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.links{
+    display: flex;
+    gap: 48px;
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+a.navLink:link, a.navLink:visited{
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: var(--pink);
+    background-color: var(--cream);
+
+}
+a.navLink:hover, a.navLink:active{
+    background-color: var(--lightBlue);
+    color: var(--cream);
+}
+
+.icon-button {
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+    cursor: pointer;
+}
+.icon-button:active{
+    color: var(--lightBlue);
+}
+            </pre>
+        </div>
+        <div>
+            <h2>JS</h2>
+            <pre class="code" id="navbar-js">
+const navIcon = document.getElementById("nav-button");
+
+navIcon.addEventListener("click", () => {
+    console.log("Navigation icon was clicked");
+});
+            </pre>
+        </div>
+    </div>
+    
+</body>
+</html>

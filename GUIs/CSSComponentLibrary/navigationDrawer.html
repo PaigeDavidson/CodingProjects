@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="navigationDrawer.js" defer></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="navigationDrawer.css">
+    <title>navigationDrawer</title>
+</head>
+    <h1>Navigation Drawer</h1>
+<body>
+    <div class="sidenav">
+        <a href="/Users/user/CSSComponentLibrary/home.html">Home</a>
+        <a href="/Users/user/CSSComponentLibrary/navbar.html">Navbar</a>
+        <a href="/Users/user/CSSComponentLibrary/navigationDrawer.html">Navigation Drawer</a>
+        <a href="/Users/user/CSSComponentLibrary/button.html">Button</a>
+        <a href="/Users/user/CSSComponentLibrary/FAB.html">Floating Action Button (FAB)</a>
+        <a href="/Users/user/CSSComponentLibrary/imageCarousel.html">Image Carousel</a>
+        <a href="/Users/user/CSSComponentLibrary/loadingSpinners.html">Loading Spinners</a>
+    </div>
+
+    <div class="codeBlocks">
+        <h2>Example</h2>
+        <div class="example">
+            <div class="mask" id="mask"></div>
+            <nav class="navbar">
+                <button class="icon-button" id="nav-button">
+                    <span class="material-icons">menu</span>
+                </button>
+                <h2>Your Title Here</h2>
+            </nav>
+            <nav class="drawer" id="drawer" data-open="false">
+                <a class="navLink" href="#">Link 1</a>
+                <a class="navLink" href="#">Link 2</a>
+                <a class="navLink" href="#">Link 3</a>
+                <a class="navLink" href="#">Link 4</a>
+            </nav>
+        </div>
+        <h2>Description</h2>
+        <div class="code">
+            <p class="paragraph">
+                This is a navigation drawer meant to be fixed to the left of a web page that can be opened and closed. 
+            </p>
+            <p class="paragraph">
+                Any number of links can be added to the drawer by replacing the '#' in the drawer in the HTML 
+                with a url of your own or adding an additional a link with the navLink class.
+            </p>
+            <p class="paragraph"> 
+                The colors can be changed by changing the colors in the CSS file in the :root{} section. 
+            </p>
+            <p class="paragraph"> 
+                In addition, you can also change the website title by replacing the 'Your Title Here' text with text of your own. 
+            </p>
+            <p class="paragraph"> 
+                It is important to remember to link the google stylesheet (for the menu icon), your own CSS file, and your own
+                javaScript file at the top of your HTML file in order for the component to work properly.
+            </p>
+        </div>
+        <div>
+            <h2>HTML</h2>
+            <pre class="code" id="navbar-html"></pre>
+        </div>
+        <div>
+            <h2>CSS</h2>
+            <pre class="code" id="navbar-css">
+:root{
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    display: flex;
+    gap: 8px;
+    background-color: var(--pink);
+    color: var(--cream);
+}
+
+.icon-button {
+    background-color: transparent;
+    padding: 8px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+    cursor: pointer;
+}
+.icon-button:active{
+    color: var(--lightBlue);
+}
+a.navLink:link, a.navLink:visited{
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: var(--cream);
+
+}
+a.navLink:hover, a.navLink:active{
+    color: var(--pink);
+}
+.drawer {
+    position: fixed;
+    top: 80px;
+    left: -300px;
+    bottom: 0;
+    width: 300px;
+    background-color: var(--darkBlue);
+    color: var(--cream);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+    z-index: 10;
+}
+
+.drawer > a{
+    display: flex;
+    padding: 16px 16px;
+    align-items: center;
+    gap: 8px;
+}
+
+.drawer[data-open="true"] {
+    display: block;
+    transform: translateX(0);
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease;
+    display: none;
+    z-index: 5;
+}
+
+.mask[data-open="true"] {
+    display: block;
+    bottom: 0;
+    right: 0;
+}
+            </pre>
+        </div>
+        <div>
+            <h2>JS</h2>
+            <pre class="code" id="navbar-js">
+let isNavOpen = false;
+
+const drawer = document.getElementById("drawer");
+const mask = document.getElementById("mask");
+
+function toggleMask() {
+    isNavOpen = !isNavOpen;
+    drawer.dataset.open = `${isNavOpen}`;
+    mask.dataset.open = `${isNavOpen}`;
+
+}
+
+document.getElementById("nav-button").addEventListener("click", () => {
+    toggleMask();
+});
+
+mask.addEventListener("click", () => {
+    toggleMask();
+})
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

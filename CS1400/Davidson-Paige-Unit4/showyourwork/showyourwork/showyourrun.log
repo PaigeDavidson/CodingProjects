@@ -1,0 +1,82 @@
+"r","80","/usr/local/bin/python3 /Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py",,"PythonRunner",,"157871308","0"
+"o","80",,"Traceback (most recent call last):
+",,"stderr","157875916","0"
+"o","80",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 58, in <module>
+",,"stderr","157875916","0"
+"o","80",,"    drawChessboard(4, 5, 250, 250)
+",,"stderr","157875916","0"
+"o","80",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 27, in drawChessboard
+",,"stderr","157875916","0"
+"o","80",,"    drawAllRectangles(startX, startY, height, width)
+",,"stderr","157875916","0"
+"o","80",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 39, in drawAllRectangles
+",,"stderr","157875916","0"
+"o","80",,"    drawRectangle()
+",,"stderr","157875916","0"
+"o","80",,"TypeError: drawRectangle() missing 4 required positional arguments: 'x', 'y', 'height', and 'width'
+",,"stderr","157875916","0"
+"o","80",,"
+Process finished with exit code 1
+",,"system","157875939","0"
+"r","81","/usr/local/bin/python3 /Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py",,"PythonRunner",,"157928524","0"
+"o","81",,"Traceback (most recent call last):
+",,"stderr","157932907","0"
+"o","81",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 58, in <module>
+",,"stderr","157932907","0"
+"o","81",,"    drawChessboard(4, 5, 250, 250)
+",,"stderr","157932907","0"
+"o","81",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 17, in drawChessboard
+",,"stderr","157932907","0"
+"o","81",,"    turtle.penup()
+",,"stderr","157932907","0"
+"o","81",,"  File ""<string>"", line 5, in penup
+",,"stderr","157932907","0"
+"o","81",,"turtle.Terminator
+",,"stderr","157932914","0"
+"o","81",,"
+Process finished with exit code 1
+",,"system","157932926","0"
+"r","82","/usr/local/bin/python3 /Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py",,"PythonRunner",,"160596029","0"
+"o","82",,"Traceback (most recent call last):
+",,"stderr","160600881","0"
+"o","82",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 58, in <module>
+",,"stderr","160600881","0"
+"o","82",,"    drawChessboard(4, 5, 250, 250)
+",,"stderr","160600881","0"
+"o","82",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 17, in drawChessboard
+",,"stderr","160600881","0"
+"o","82",,"    turtle.penup()
+",,"stderr","160600881","0"
+"o","82",,"  File ""<string>"", line 5, in penup
+",,"stderr","160600881","0"
+"o","82",,"turtle.Terminator
+",,"stderr","160600881","0"
+"o","82",,"
+Process finished with exit code 1
+",,"system","160600894","0"
+"r","83","/usr/local/bin/python3 /Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py",,"PythonRunner",,"160611435","0"
+"o","83",,"Traceback (most recent call last):
+",,"stderr","160615304","0"
+"o","83",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 58, in <module>
+",,"stderr","160615304","0"
+"o","83",,"    drawChessboard(4, 5, 250, 250)
+",,"stderr","160615304","0"
+"o","83",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 27, in drawChessboard
+",,"stderr","160615304","0"
+"o","83",,"    drawAllRectangles(startX, startY, height, width)
+",,"stderr","160615304","0"
+"o","83",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 39, in drawAllRectangles
+",,"stderr","160615304","0"
+"o","83",,"    drawRectangle(x, y, height/width, width/height)
+",,"stderr","160615306","0"
+"o","83",,"  File ""/Users/user/Documents/CS1400/Davidson-Paige-Unit4/chess/chessboard.py"", line 43, in drawRectangle
+",,"stderr","160615306","0"
+"o","83",,"    turtle.penup()
+",,"stderr","160615306","0"
+"o","83",,"  File ""<string>"", line 5, in penup
+",,"stderr","160615306","0"
+"o","83",,"turtle.Terminator
+",,"stderr","160615306","0"
+"o","83",,"
+Process finished with exit code 1
+",,"system","160615331","0"

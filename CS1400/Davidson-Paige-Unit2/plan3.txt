@@ -1,0 +1,36 @@
+Requirements Specification
+    Prompt user to input the length and number of sides for a polygon
+    display the area of the regular polygon with an appropriate message
+
+System Analysis
+    area = n x s^2
+           ----------
+           4 x tan(pi/n)
+      n = number of sides
+      s = length of each side
+
+System Design
+    import math module
+    import pi and tan from math
+    prompt user for number of sides (n)
+    prompt user for length os sides (s)
+    compute area using formula and appropriate math modules
+    round answer to 5 decimal places
+    display polygon area to user
+
+implementation - coding
+
+testing
+    test 1
+    n = 8
+    s = 2
+    ans = 19.31371
+
+    failed - had to add another set of parenthesis around (4 x tan(pi/n))
+
+    test 2
+    n = 5
+    s = 8
+    ans = 110.11055
+
+    passed

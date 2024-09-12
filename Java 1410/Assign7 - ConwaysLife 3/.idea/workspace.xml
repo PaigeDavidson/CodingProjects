@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4aac3e59-b25b-4cd7-9a88-7387c25c8436" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+  </component>
+  <component name="ProjectId" id="1Sf6ySklvPm4usjnoKIit7LNgPc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Driver">
+    <configuration name="Driver" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="ConwaysLife" />
+      <module name="Assign7 - ConwaysLife" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unit Tests" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Driver" />
+      <item itemvalue="JUnit.Unit Tests" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4aac3e59-b25b-4cd7-9a88-7387c25c8436" name="Default Changelist" comment="" />
+      <created>1571942556291</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571942556291</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1022" y="308" key="#Project_Structure" timestamp="1604680026350">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1022" y="308" key="#Project_Structure/-3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604680026349" />
+    <state width="675" height="309" key="GridCell.Tab.0.bottom" timestamp="1604680065972">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="675" height="309" key="GridCell.Tab.0.bottom/-3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604680065972" />
+    <state width="675" height="309" key="GridCell.Tab.0.center" timestamp="1604680065972">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="675" height="309" key="GridCell.Tab.0.center/-3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604680065972" />
+    <state width="675" height="309" key="GridCell.Tab.0.left" timestamp="1604680065972">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="675" height="309" key="GridCell.Tab.0.left/-3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604680065972" />
+    <state width="675" height="309" key="GridCell.Tab.0.right" timestamp="1604680065972">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="675" height="309" key="GridCell.Tab.0.right/-3840.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1604680065972" />
+  </component>
+</project>

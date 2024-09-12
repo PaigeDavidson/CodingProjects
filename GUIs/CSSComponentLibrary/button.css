@@ -1,0 +1,47 @@
+:root{
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+
+}
+.paragraph{
+    padding: 0px 10px;
+    font-size: 20px;
+    background-color: var(--darkBlue);
+    border-radius: 4px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.button {
+    background-color: var(--pink);
+    border: none;
+    margin-right: 30px;
+    border-radius: 4px;
+    color: var(--cream);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+   
+  }
+.button:hover{
+    background-color: var(--darkBlue);
+}
+.button:active {
+    background-color: var(--lightBlue); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+}
+.button a {
+    margin-right: 8px; 
+}

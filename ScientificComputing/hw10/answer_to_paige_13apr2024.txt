@@ -1,0 +1,24 @@
+Hello, Paige,
+
+We need to scale each channel's pixe values to be in the interval [0, 255].
+We can do this:
+
+    @staticmethod
+    def __get_byte(i, byte_index):
+        i = int(i)
+        return ((i >> (8 * byte_index)) % 256 + 256) % 256
+
+And then this:
+
+    @staticmethod
+    def __int_to_rgb(i):
+        r = prng.__get_byte(i, 0) / 255
+        g = prng.__get_byte(i, 1) / 255
+        b = prng.__get_byte(i, 2) / 255
+        return [r, g, b]
+
+This is just one of the many ways to do it. I am sure there are others.
+
+Kind regards,
+Vladimir Kulyukin
+

@@ -1,0 +1,102 @@
+Requirements Specification
+    prompt user to input employee name, number of hours worked in a week, hourly pay rate,
+    federal tax withholding rate, and state tax withholding rate
+
+    display: NAME PAY INFORMATION in all upper case with the following information below:
+        pay: hours worked, pay rate, gross pay
+        deductions: federal withholding, state withholding, total deduction
+        net pay
+
+System Analysis
+    code must look like:
+    Enter employee's name: Chad Mano
+    Enter number of hours worked in a week: 40
+    Enter hourly pay rate: 12.75
+    Enter federal tax withholding rate (ex. 0.12): 0.11
+    Enter state tax withholding rate (ex. 0.06): 0.07
+
+        CHAD MANO PAY INFORMATION
+
+                  Pay
+               Hours Worked:          40
+                   Pay Rate: $     12.75
+                  Gross Pay: $    510.00
+
+               Deductions
+Federal Withholding (11.0%): $     56.10
+   State Withholding (7.0%): $     35.70
+            Total Deduction: $     91.80
+                    Net Pay: $    418.20
+
+System Design
+    prompt user to input employee name, number of hours worked in a week, hourly pay rate,
+    federal tax withholding rate, and state tax withholding rate
+
+    create separate variables for gross pay, federal withholding, state withholding, total deduction, and total pay
+    based on user input
+
+     create easily manipulated format variables
+
+    format output
+        center titles
+        put a space between each section
+        each output is on a separate line
+        $, :, and decimal places are lined up
+        no math in print statements
+        concatenate lines
+
+    form a single print statement from concatenated lines
+
+    display variables and net pay to user
+
+Testing
+    test one:
+        input:
+         Enter employee's name: Paige Davidson
+        Enter number of hours worked in a week: 40
+        Enter hourly pay rate: 12.75
+        Enter federal tax withholding rate (ex. 0.12): .11
+        Enter state tax withholding rate (ex. 0.06): .07
+
+        output:
+
+         PAIGE DAVIDSON PAY INFORMATION
+
+                  Pay
+               Hours Worked:          40
+                   Pay Rate: $     12.75
+                  Gross Pay: $    510.00
+
+               Deductions
+Federal Withholding (11.0%): $     56.10
+   State Withholding (7.0%): $     35.70
+            Total Deduction: $     91.80
+
+                    Net Pay: $    418.20
+Not passed - this ont took a lot of attempts to fix but my main formatting error was the rounding
+of each variable so decimal placed lined up as well as $ and : symbols
+
+
+    test two:
+        input:
+            Enter employee's name: paige davidson
+            Enter number of hours worked in a week: 35
+            Enter hourly pay rate: 13.50
+            Enter federal tax withholding rate (ex. 0.12): .13
+            Enter state tax withholding rate (ex. 0.06): .0513
+        output:
+        PAIGE DAVIDSON PAY INFORMATION
+
+                  Pay
+               Hours Worked:          35
+                   Pay Rate: $     13.50
+                  Gross Pay: $    472.50
+
+               Deductions
+Federal Withholding (11.0%): $     61.43
+   State Withholding (7.0%): $     23.62
+            Total Deduction: $     85.05
+
+                    Net Pay: $    387.45
+passed
+

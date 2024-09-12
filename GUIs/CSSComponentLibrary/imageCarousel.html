@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="imageCarousel.css">
+    <script src="imageCarousel.js" defer></script>
+    <title>Document</title>
+</head>
+    <h1>Image Carousel</h1>
+<body>
+    <div class="sidenav">
+        <a href="/Users/user/CSSComponentLibrary/home.html">Home</a>
+        <a href="/Users/user/CSSComponentLibrary/navbar.html">Navbar</a>
+        <a href="/Users/user/CSSComponentLibrary/navigationDrawer.html">Navigation Drawer</a>
+        <a href="/Users/user/CSSComponentLibrary/button.html">Button</a>
+        <a href="/Users/user/CSSComponentLibrary/FAB.html">Floating Action Button (FAB)</a>
+        <a href="/Users/user/CSSComponentLibrary/imageCarousel.html">Image Carousel</a>
+        <a href="/Users/user/CSSComponentLibrary/loadingSpinners.html">Loading Spinners</a>
+    </div>
+
+    <div class="codeBlocks">
+        <h2>Example</h2>
+        <div class="container" id="container">
+            <div class="images">
+                <img class="image" src="canyonlands.jpeg" alt="img1">
+                <img class="image" src="stGeorge.jpeg" alt="img2">
+                <img class="image" src="pinnacle.jpeg" alt="img3">
+                <img class="image" src="greenCanyon.jpeg" alt="img4">
+                <img class="image" src="snow.jpeg" alt="img5">
+            </div>
+        </div>
+
+        <h2>Description</h2>
+        <div class="code">
+            <p class="paragraph">
+                This is an Image carosel that can display any number of images.
+            </p>
+            <p class="paragraph"> 
+                You can add your images by adding another image path inside the images div in the HTML 
+                or replacing the src of the existing images with your own.
+            </p>
+            <p class="paragraph"> 
+                It is important to remember to link your own CSS  and JS files at the top of your HTML file in order for 
+                the component to work properly.
+            </p>
+        </div>
+
+    <div>
+        <h2>HTML</h2>
+        <pre class="code" id="imageCarousel-html"></pre>
+    </div>
+    <div>
+        <h2>CSS</h2>
+        <pre class="code">
+.container {
+    position: relative;
+    width: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    overflow: clip;
+    overflow-clip-margin: 10em;
+}
+.images {
+    display: flex;
+}
+.image {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+    
+        </pre>
+    </div>
+    <div>
+        <h2>JS</h2>
+        <pre class="code">
+const imagesContainer = document.querySelector('.images');
+let images = document.querySelectorAll('.image');
+let index = 0;
+
+function showImage(index) {
+    const translateValue = -index * 100 + '%';
+    imagesContainer.style.transition = "transform 0.5s ease-in-out";
+    imagesContainer.style.transform = `translateX(${translateValue})`;
+}
+
+function nextImage() {
+    // Clone and append the images
+    let clone = images[index].cloneNode(true);
+    imagesContainer.appendChild(clone);
+
+    // Update the images NodeList
+    images = document.querySelectorAll('.image');
+
+    // Update the index and show the next image
+    index++;
+    showImage(index);
+}
+
+// Set an interval to transition to the next image every 3 seconds
+setInterval(nextImage, 3000);
+        </pre>
+    </div>
+    </div>
+</body>
+</html>

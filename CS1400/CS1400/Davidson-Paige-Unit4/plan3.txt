@@ -1,0 +1,106 @@
+requirements specification
+    1. user will choose a mode:
+        1) Rectangle Pattern
+        2) Circle Pattern
+        3) Super Pattern
+        Which mode do you want to play? 1, 2 or 3: 3
+        Enter number:
+    2. based on number chosen user can input variables for the
+        drawCirclePattern(centerX, centerY, offset, radius, count)
+        drawSuperPattern(num)
+        or drawRectanglePattern(centerX, centerY, offset, width, height, count, rotation)
+    3. based on user input, the turtle consul will display the results of user input
+    4. the user will be given the option to:
+        Do you want to play again?
+        1) Yes, and keep drawings
+        2) Yes, and clear drawings
+        3) No, I am all done
+    5. the code will exit with the statement: Thanks for playing!
+
+system analysis
+    program will output a pattern of squares or circles or a combination of both in the turtle
+    console based on user input
+
+    each square or circle generated will be a random color out of four colors
+
+Software design
+    - import pattern module
+    main()
+        1. use the pattern.setup() function
+        2. create a variable playAgain = true
+        3. use a while loop to keep running the program until the user quits and playAgain = false
+        4. present a menu to the user and let them select the mode they want to use
+        5. create an if - elif - else statement that runs with the circles, rectangles, or super
+        function based on the mode chosen
+        6.ask user if the want to play again
+            given three options:
+                1) Yes, and keep drawings
+                2) Yes, and clear drawings
+                3) No, I am all done
+        7. Add Statements to clear drawings and play again
+        8. print an end statement: Thanks for playing!
+        9.  call pattern.done()
+        10. exit while loop
+    - call main
+    pattern.py
+    - import turtle and random
+    reset()
+        1. use turtle.reset() function to erase and reset all previous drawings
+        2. set speed to zero (fast) to start
+    setup()
+        1. set turtle.speed to draw quickly
+        2. Configure turtle to have a window of 1000 x 800
+    drawRectanglePattern()
+        1. Use appropriate parameters
+        2. create variable to divide the count evenly into the 360-degree circle
+        3. create a for loop for each iteration created in the count
+        4. call the setRandomColor() function
+        5. cause turtle to go to the center points
+        6. give turtle a set heading to it is facing the correct direction
+        7. multiply iteration by i so spacing is correct for each iteration
+        8. include offset by going forward
+        9. include rotation by going left
+        10. use the drawRectangle(width, height) function to draw the rectangle
+        11. hide the turtle
+    drawRectangle()
+        1. give formal parameters of (width, height) for a height and width
+        2. draw a single rectangle using turtle module
+        3. pick up the pen and move it to the starting position
+        4. use turtle.forward() and left(90) to create a rectangle that can be started anywhere
+            and used by the drawRectanglePattern() function
+    drawCirclePattern()
+        1. Use appropriate parameters:
+            centerX, centerY, offset, radius, count
+        2. create variable to divide the count evenly into the 360-degree circle
+        3. create a for loop for each iteration created in the count
+        4. call the setRandomColor() function
+        5. cause turtle to go to the center points
+        6. move turtle left by the variable for each iteration of the loop
+        7. move turtle forward the offset plus the radius
+        8. draw the circle
+        9. hide turtle
+    drawSuperPattern()
+        1. create a for loop for i to the user input num
+        2. create circle pattern variables with randomly generated numbers within a reasonable range
+        3. create rectangle pattern variables with randomly generated numbers within a reasonable range
+        4. create an if else statement using the mod variable and a randomly generated number between
+            1 and 2 to determine which pattern will be run for each iteration of the for loop
+    setRandomColor()
+        1. Do not use any parameters
+        2. create color as a random integer between 1 and 4
+        3. create an in-elif-else statment that picks a different color for each randomly generated
+            number
+        4. create the turtle.color() function with color variable
+    done()
+        Called when user quits
+        Keeps the turtle window open
+        basically just the turtle.done()
+        use the hideturtle function before turtle.done()
+
+Testing
+    since there are to many variations of the code to test within two tests, I will run each
+    mode several times and choose each option from the Do you want to play again? menu in order to
+    ensure each part of the code works properly.
+
+    It took several tries to get the option three in the Do you want to play again? menu to properly end
+    the code but in the end it worked out.

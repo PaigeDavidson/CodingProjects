@@ -1,0 +1,1461 @@
+
+<!-- saved from url=(0060)https://circuitverse.org/simulator/edit/davidson-paige-assn2 -->
+<html style="--text-navbar--alt: #000; --br-secondary: #7d7d7d; --br-circuit-cur: #fff; --br-circuit: #454545; --cus-radio_label: #656565; --primary: #454545; --text-lite: #fff; --text-dark: #000; --text-panel: white; --bg-navbar: #454545; --qp-br-tl: #333333; --qp-br-rd: #535353; --qp-box-shadow-1: #3b3b3b; --qp-box-shadow-2: #4f4f4f; --bg-circuit: #ddd; --br-primary: #fff; --bg-primary-moz: #454545e6; --bg-primary-chr: #454545b3; --bg-tabs: #8b8b8b; --bg-icons: #7d7d7d; --bg-text: #cacaca; --bg-secondary: #bbbbbb; --canvas-stroke: #eee; --canvas-fill: white; --context-text: white; --bg-toggle-btn-primary: #42b983; --primary-btn-hov: #3ca877; --btn-danger: #dc5656; --btn-danger-darken: #b03662; --disable: #6c8b93; --cus-btn-hov--bg: #ddd; --cus-btn-hov-text: #000; --node: green; --stroke: black; --fill: white; --hover-and-sel: rgba(255, 255, 32, 0.8); --wire-draw: black; --wire-cnt: green; --wire-pow: lightgreen; --wire-sel: blue; --wire-lose: red; --mini-map: green; --mini-map-stroke: darkgreen; --input-text: green; --secondary-stroke: red; --text: black; --wire-norm: black; --node-norm: green; --splitter: black; --output-rect: blue; --touch-menu: #7d7d7d;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" async="" src="./CircuitVerse - Digital Circuit Simulator online_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-1f6f48535eccc44d6a0","applicationID":"637893211","transactionName":"IFpcQUpXWA1WFhhHXA5AXlRMV0ZOVgBeQA==","queueTime":0,"applicationTime":18,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-1f6f48535eccc44d6a0",applicationID:"637893211"};;/*! For license information please see nr-loader-rum-1.250.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>A,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const a={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a);const r=(0,n.ek)(e);r&&(r.info=o[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},w={};function A(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!w[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return w[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");w[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=w[e])}const x=(0,n.mF)().o;var E=r(385),D=r(6818);const k={buildEnv:D.Re,customTransaction:void 0,disabled:!1,distMethod:D.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(E._A?.performance?.timeOrigin||E._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+E._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof E._A.XMLHttpRequest?.prototype?.addEventListener,version:D.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,k);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>a,q4:()=>n});const n="1.250.0",i="PROD",a="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=(a?.document?.readyState,Boolean("hidden"===a?.document?.visibilityState)),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>a});var n=r(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),a=r(4322),o=r(3325);const s={};function c(e,t){const r={staged:!1,priority:o.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const r=[...s[e]];function o(t){const r=e?n.ee.get(e):n.ee,o=a.X.handlers;if(r.backlog&&o){var s=r.backlog[t],c=o[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete o[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),o(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),a=r(234);class o{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(u.aborted&&!i)return;t&&a&&t.emit(e,r,n);for(var o=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(o,r);var f=b()[s[e]];f&&f.push([g,e,r,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>a});var n=r(5546);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.E,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.E);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var n=r(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>o,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,i++).toString(16));return o.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>o});const n="NRBA",i=144e5,a=18e5,o={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),a=r(3325),o=r(385);const s="newrelic";const c={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{o._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>a});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>o,b2:()=>a});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.bP)("load",e,t)}function o(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>a,ek:()=>u,fP:()=>o,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=o();return t.initializedAgents?.[e]}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>a,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>o});const n=r(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),a=r(5546),o=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...n))})),a.length>1?a:a[0]}(t,...n)}}))}var h=r(2825);const v=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:E=!0}=t;const D=(0,g.gG)();A||(w=D.init,A=D.info,_=D.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,_||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const k=(0,i.P_)(e.agentIdentifier),j=[A.beacon,A.errorBeacon];m||(k.proxy.assets&&(v(k.proxy.assets),j.push(k.proxy.assets)),k.proxy.beacon&&j.push(k.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...k.ajax.deny_list||[],...k.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,r,n,a){const o=(0,i.C5)(e);return null===r?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:r}}),A(v,n,!0,a||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,a.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,a.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,a.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,a.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,a.p)(m+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],r),e}finally{h.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function _(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=E),m=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.250.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.250.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={75:"sha512-2/f4ks7UUkz/V5qC88wpBuGtLglDVUbydMJpZeUMyA/1ChnpO/Q00ZY/7dABphVkZ8zpnV6zFxxikFwJCMiQRg=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,u=0;if(o.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.250.0.PROD"]=self["webpackChunk:NRBA-1.250.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(e){return"Call to agent api ".concat(e," failed. The agent is not currently initialized.")}addPageAction(t,r){(0,e.Z)(this.#e("addPageAction"))}setPageViewName(t,r){(0,e.Z)(this.#e("setPageViewName"))}setCustomAttribute(t,r,n){(0,e.Z)(this.#e("setCustomAttribute"))}noticeError(t,r){(0,e.Z)(this.#e("noticeError"))}setUserId(t){(0,e.Z)(this.#e("setUserId"))}setApplicationVersion(t){(0,e.Z)(this.#e("setApplicationVersion"))}setErrorHandler(t){(0,e.Z)(this.#e("setErrorHandler"))}finished(t){(0,e.Z)(this.#e("finished"))}addRelease(t,r){(0,e.Z)(this.#e("addRelease"))}start(t){(0,e.Z)(this.#e("start"))}recordReplay(){(0,e.Z)(this.#e("recordReplay"))}pauseReplay(){(0,e.Z)(this.#e("pauseReplay"))}}var r=i(3325),n=i(234);const a=Object.values(r.D);function o(e){const t={};return a.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,957));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,d.b2)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var a=this.getBucket(e,t,r,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,a.metrics),a}merge(e,t,r,n,i){var a=this.getBucket(e,t,n,i);if(a.metrics){var o=a.metrics;o.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=o[e],i=r[e];i&&!i.c?o[e]=b(i.t,n):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),E=i(4351);var D=i(5546),k=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,k.N)((()=>(0,D.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,D.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class P extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=o(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,T,P],loaderType:"lite"})})()})();</script>
+<title>CircuitVerse - Digital Circuit Simulator online</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="o6FdZ10gL6QS6f0q+cHWtCRqYG3uepbNKKlkyWWU4HgRpDsg5z7XKkLNDGyMqq/0IhvSBdzZ4Y/1jpIVvZMhBg==">
+<script>window.locale = "en"</script>
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/pace.js"></script>
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/jquery-364e0644.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://circuitverse.org/vite/assets/_commonjsHelpers-87174ba5.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://circuitverse.org/vite/assets/jquery-991d0b6a.js" as="script" crossorigin="anonymous">
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/bootstrap-8ff7e24b.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://circuitverse.org/vite/assets/_commonjsHelpers-87174ba5.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://circuitverse.org/vite/assets/jquery-991d0b6a.js" as="script" crossorigin="anonymous">
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/simulator-fe278ed2.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://circuitverse.org/vite/assets/_commonjsHelpers-87174ba5.js" as="script" crossorigin="anonymous"><link rel="stylesheet" href="./CircuitVerse - Digital Circuit Simulator online_files/simulator-78dffc43.css" media="screen">
+<link rel="icon" type="image/x-icon" href="https://circuitverse.org/assets/favicon-73d19908a714d479c8d64ef295e12e0e11b9201e7c070e8514e2843274542b31.ico">
+
+<script async="" src="./CircuitVerse - Digital Circuit Simulator online_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112678513-1');
+  gtag('set', { 'user_id': '216817' }); // Set the user ID using signed-in user_id.
+</script>
+<style>.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 2px solid var(--rdp-accent-color); /* Outline border for focused elements */
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75); /* Outline border for focused _and_ selected elements */
+
+  margin: 1em;
+}
+
+/* Hide elements for devices that are not screen readers */
+.rdp-vhidden {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute !important;
+  top: 0;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+}
+
+/* Buttons */
+.rdp-button_reset {
+  appearance: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  color: inherit;
+  outline: none;
+  background: none;
+  font: inherit;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.rdp-button {
+  border: 2px solid transparent;
+}
+
+.rdp-button[disabled] {
+  opacity: 0.25;
+}
+
+.rdp-button:not([disabled]) {
+  cursor: pointer;
+}
+
+.rdp-button:focus:not([disabled]),
+.rdp-button:active:not([disabled]) {
+  color: inherit;
+  border: var(--rdp-outline);
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-button:hover:not([disabled]) {
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-months {
+  display: flex;
+}
+
+.rdp-month {
+  margin: 0 1em;
+}
+
+.rdp-month:first-child {
+  margin-left: 0;
+}
+
+.rdp-month:last-child {
+  margin-right: 0;
+}
+
+.rdp-table {
+  margin: 0;
+  max-width: calc(var(--rdp-cell-size) * 7);
+  border-collapse: collapse;
+}
+
+.rdp-with_weeknumber .rdp-table {
+  max-width: calc(var(--rdp-cell-size) * 8);
+  border-collapse: collapse;
+}
+
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+}
+
+.rdp-multiple_months .rdp-caption {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.rdp-caption_dropdowns {
+  position: relative;
+  display: inline-flex;
+}
+
+.rdp-caption_label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.25em;
+  white-space: nowrap;
+  color: currentColor;
+  border: 0;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.rdp-nav {
+  white-space: nowrap;
+}
+
+.rdp-multiple_months .rdp-caption_start .rdp-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-multiple_months .rdp-caption_end .rdp-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-nav_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  padding: 0.25em;
+  border-radius: 100%;
+}
+
+/* ---------- */
+/* Dropdowns  */
+/* ---------- */
+
+.rdp-dropdown_year,
+.rdp-dropdown_month {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rdp-dropdown {
+  appearance: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rdp-dropdown[disabled] {
+  opacity: unset;
+  color: unset;
+}
+
+.rdp-dropdown:focus:not([disabled]) + .rdp-caption_label,
+.rdp-dropdown:active:not([disabled]) + .rdp-caption_label {
+  border: var(--rdp-outline);
+  border-radius: 6px;
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-dropdown_icon {
+  margin: 0 0 0 5px;
+}
+
+.rdp-head {
+  border: 0;
+}
+
+.rdp-head_row,
+.rdp-row {
+  height: 100%;
+}
+
+.rdp-head_cell {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+}
+
+.rdp-tbody {
+  border: 0;
+}
+
+.rdp-tfoot {
+  margin: 0.5em;
+}
+
+.rdp-cell {
+  width: var(--rdp-cell-size);
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+  text-align: center;
+}
+
+.rdp-weeknumber {
+  font-size: 0.75em;
+}
+
+.rdp-weeknumber,
+.rdp-day {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--rdp-cell-size);
+  max-width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: bold;
+}
+
+.rdp-day_selected:not([disabled]),
+.rdp-day_selected:focus:not([disabled]),
+.rdp-day_selected:active:not([disabled]),
+.rdp-day_selected:hover:not([disabled]) {
+  color: white;
+  background-color: var(--rdp-accent-color);
+}
+
+.rdp-day_selected:focus:not([disabled]) {
+  border: var(--rdp-outline-selected);
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp-day_range_end.rdp-day_range_start {
+  border-radius: 100%;
+}
+
+.rdp-day_range_middle {
+  border-radius: 0;
+}
+</style></head>
+<body class="  pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/jquery.twbs-toggle-buttons.min.js" defer=""></script>
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/checkBo.min.js" defer=""></script>
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/bootstrap-input-spinner.js" defer=""></script>
+<script>
+  userSignedIn = true;
+  __logix_project_id = "davidson-paige-assn2";
+  __projectName = "Davidson-Paige-Assn2"
+</script>
+<div id="exitView"></div>
+<nav class="navbar navbar-expand-lg navbar-dark header">
+<a href="https://circuitverse.org/"><span class="logo"></span></a>
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="collapsedNavbar" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-between" id="bs-example-navbar-collapse-1">
+<ul class="navbar-nav navbar-menu noSelect pointerCursor" id="toolbar">
+<li class="dropdown nav-dropdown d-flex">
+<a href="https://circuitverse.org/simulator/edit/davidson-paige-assn2#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Project<span></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item logixButton text-left pl-1" href="https://circuitverse.org/users/216817/projects/davidson-paige-assn2" target="_blank">Project Page</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="newProject">New Project</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="save">Save Online</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="saveOffline">Save Offline</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="createOpenLocalPrompt">Open Offline</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="ExportCircuitFiles">Export as file</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="ImportCircuitFiles">Import file</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="clearProject">Clear Project</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="recoverProject">Recover Project</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="fullViewOption">Preview Circuit</a></li>
+</ul>
+</li>
+<li class="dropdown nav-dropdown d-flex">
+<a href="https://circuitverse.org/simulator/edit/davidson-paige-assn2#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Circuit<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item text-left logixButton pl-1" id="createNewCircuitScope">New Circuit + </a></li>
+<li><a class="dropdown-item text-left logixButton pl-1" id="newVerilogModule">New Verilog <br> Module</a></li>
+<li><a class="dropdown-item logixButton text-left pl-1" id="createSubCircuitPrompt">Insert SubCircuit</a></li>
+</ul>
+</li>
+<li class="dropdown nav-dropdown d-flex">
+<a href="https://circuitverse.org/simulator/edit/davidson-paige-assn2#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tools<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item text-left pl-1 logixButton" id="createCombinationalAnalysisPrompt">Combinational<br>Analysis</a></li>
+<li><a class="dropdown-item text-left pl-1 logixButton" id="bitconverter">Hex-Bin-Dec<br>Converter</a></li>
+<li><a class="dropdown-item text-left pl-1 logixButton" id="createSaveAsImgPrompt">Download Image</a>
+</li><li><a class="dropdown-item text-left pl-1 logixButton" id="colorThemes">Themes</a>
+</li><li><a class="dropdown-item text-left pl-1" id="customShortcut">Custom Shortcut</a></li>
+<li><a class="dropdown-item text-left pl-1 logixButton" id="generateVerilog">Export Verilog</a>
+</li></ul>
+</li>
+<li class="dropdown tour-help nav-dropdown d-flex">
+<a href="https://circuitverse.org/simulator/edit/davidson-paige-assn2#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item text-left pl-1 logixButton" id="showTourGuide">Tutorial Guide</a></li>
+<li><a class="dropdown-item text-left pl-1" href="https://docs.circuitverse.org/" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">User Manual</a></li>
+<li><a class="dropdown-item text-left pl-1" href="https://learn.circuitverse.org/" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Learn Digital Logic</a></li>
+<li><a class="dropdown-item text-left pl-1" href="https://circuitverse.org/forum" target="_blank" role="button" aria-haspopup="true" aria-expanded="false">Discussion Forum</a></li>
+</ul>
+</li>
+</ul>
+<span class="projectName noSelect defaultCursor font-weight-bold" id="projectName">Davidson-Paige-Assn2</span>
+<ul class="nav navbar-nav noSelect pointerCursor pull-right account-btn">
+<li class="dropdown pull-right">
+<a href="https://circuitverse.org/simulator/edit/davidson-paige-assn2#" class="cur-user acc-drop user-field" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Davidson Paige A02339425<span class="caret acc-caret"></span></a>
+<ul class="dropdown-menu">
+<li><a class="dropdown-item" href="https://circuitverse.org/users/216817">Dashboard</a></li>
+<li><a class="dropdown-item" href="https://circuitverse.org/users/216817/groups">My Groups</a></li>
+<li><a class="dropdown-item" href="https://circuitverse.org/users/216817/notifications">Notifications</a></li>
+<div class="dropdown-divider"></div>
+<li><a class="dropdown-item" rel="nofollow" data-method="delete" href="https://circuitverse.org/users/sign_out">Sign Out</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div ondrag="(() =&gt; {$(&#39;.quick-btn&#39;).css({&#39;box-shadow&#39;: &#39;none&#39;, &#39;background&#39;: &#39;var(--bg-navbar)&#39;})})()" class="quick-btn" id="quick-btn-id">
+<div id="dragQPanel" class="panel-drag">
+<span><svg style="height: 20px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="31" viewBox="0 0 18 31">
+<defs>
+<clippath id="clip-path">
+<rect width="18" height="31" fill="none"></rect>
+</clippath>
+</defs>
+<g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+<g transform="translate(-21 -29)">
+<circle id="Ellipse_1" data-name="Ellipse 1" cx="2" cy="2" r="2" transform="translate(22 30)" fill="#fff"></circle>
+</g>
+<g transform="translate(-12 -29)">
+<circle id="Ellipse_1-2" data-name="Ellipse 1" cx="2" cy="2" r="2" transform="translate(22 30)" fill="#fff"></circle>
+</g>
+<g transform="translate(-21 -18)">
+<circle id="Ellipse_1-3" data-name="Ellipse 1" cx="2" cy="2" r="2" transform="translate(22 30)" fill="#fff"></circle>
+</g>
+<g transform="translate(-12 -18)">
+<circle id="Ellipse_1-4" data-name="Ellipse 1" cx="2" cy="2" r="2" transform="translate(22 30)" fill="#fff"></circle>
+</g>
+<g transform="translate(-21 -7)">
+<circle id="Ellipse_1-5" data-name="Ellipse 1" cx="2" cy="2" r="2" transform="translate(22 30)" fill="#fff"></circle>
+</g>
+<g transform="translate(-12 -7)">
+<circle id="Ellipse_1-6" data-name="Ellipse 1" cx="2" cy="2" r="2" transform="translate(22 30)" fill="#fff"></circle>
+</g>
+</g>
+</svg>
+</span></div>
+<div>
+<button type="button" class="quick-btn-save-online logixButton" id="save" title="Save Online" onclick="">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-save logixButton" id="ExportCircuitFiles" title="Export as file" onclick="">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-delete" title="Delete Selected" id="deleteSelected">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-download logixButton" id="createSaveAsImgPrompt" title="Download as Image" onclick="">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-zoom-fit" title="Fit to Screen" onclick="globalScope.centerFocus(false)">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-undo" title="Undo" id="undoButton">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-redo" title="Redo" id="redoButton">
+</button>
+</div>
+<div>
+<button type="button" class="quick-btn-view" title="Preview Circuit" id="viewButton"><i style="color: #ddd;" class="fas fa-expand-arrows-alt"></i>
+</button>
+</div>
+
+<div class="zoom-slider">
+<button class="zoom-slider-decrement" id="decrement">-</button>
+<input type="range" class="custom-range" min="0" max="45" step="1" id="customRange1">
+<span id="slider_value"></span>
+<button class="zoom-slider-increment" id="increment">+</button>
+</div>
+</div>
+
+
+</nav>
+<div id="tabsBar" class="noSelect pointerCursor ui-sortable">
+
+<div style="" class="circuits toolbarButton" draggable="true" id="78464083445"><span class="circuitName noSelect">DieRoller</span><span class="tabsCloseButton" id="78464083445">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="12234595722"><span class="circuitName noSelect">RGBLED</span><span class="tabsCloseButton" id="12234595722">x</span></div><div style="" class="circuits toolbarButton current" draggable="true" id="56892571569"><span class="circuitName noSelect">Counter</span><span class="tabsCloseButton" id="56892571569">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="95998352544"><span class="circuitName noSelect">NOT</span><span class="tabsCloseButton" id="95998352544">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="62946900970"><span class="circuitName noSelect">AND</span><span class="tabsCloseButton" id="62946900970">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="23206906745"><span class="circuitName noSelect">OR</span><span class="tabsCloseButton" id="23206906745">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="56154120973"><span class="circuitName noSelect">XOR</span><span class="tabsCloseButton" id="56154120973">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="90242210947"><span class="circuitName noSelect">NOR</span><span class="tabsCloseButton" id="90242210947">x</span></div><div style="" class="circuits toolbarButton" draggable="true" id="89014775080"><span class="circuitName noSelect">XNOR</span><span class="tabsCloseButton" id="89014775080">x</span></div><button name="logixButton" class="logixButton" id="createNewCircuitScope" onclick="" aria-label="logix button"><i class="fas fa-plus"></i></button></div>
+<div title="Export Verilog" id="verilog-export-code-window-div" style="display:none"><textarea id="verilog-export-code-window" style="display: none;"></textarea><div class="CodeMirror cm-s-default" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" style="display: inline-block; width: 1px; margin-right: -1px;">&nbsp;</span></span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px;"></div><div class="CodeMirror-gutters"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div>
+<div id="code-window" class="code-window"><textarea id="codeTextArea" style="display: none;"></textarea><div class="CodeMirror cm-s-default" translate="no"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Write Some Verilog Code Here!</span></span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px;"></div><div class="CodeMirror-gutters" style="left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 1px;"></div></div></div></div></div>
+<div class="modules noSelect defaultCursor ce-panel elementPanel draggable-panel draggable-panel-css " id="guide_1" style="z-index: 99;">
+<div class="panel-header">Circuit Elements
+<span class="fas fa-minus-square minimize"></span>
+<span class="fas fa-external-link-square-alt maximize"></span>
+</div>
+<div class="panel-body" id="testid">
+<div style="position: relative;">
+<input type="text" class="search-input" value="" placeholder="Search..">
+<span><i class="fas search-close fa-times-circle"></i></span>
+</div>
+<div class="search-results"></div>
+<div class="accordion ui-accordion ui-widget ui-helper-reset" id="menu" role="tablist"><div class="panelHeader ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Input</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Input" title="Input">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Input.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Button" title="Button">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Button.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Power" title="Power">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Power.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Ground" title="Ground">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Ground.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ConstantVal" title="Constant Value">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ConstantVal.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Stepper" title="Stepper">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Stepper.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Random" title="Random">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Random.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Counter" title="Counter">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Counter.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="panelHeader ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Output</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="false" style="">
+        <div class="icon logixModules" id="Output" title="Output">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Output.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="RGBLed" title="RGB Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/RGBLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="DigitalLed" title="Digital Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/DigitalLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="VariableLed" title="Variable Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/VariableLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="HexDisplay" title="Hex Display">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/HexDisplay.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SevenSegDisplay" title="Seven Segment Display">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SevenSegDisplay.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SixteenSegDisplay" title="Sixteen Segment Display">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SixteenSegDisplay.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SquareRGBLed" title="Square RGB Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SquareRGBLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="RGBLedMatrix" title="RGB Led Matrix">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/RGBLedMatrix.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="panelHeader ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Gates</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="AndGate" title="And Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/AndGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="OrGate" title="Or Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/OrGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="NotGate" title="Not Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/NotGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="XorGate" title="Xor Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/XorGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="NandGate" title="Nand Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/NandGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="NorGate" title="Nor Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/NorGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="XnorGate" title="Xnor Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/XnorGate.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="panelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Decoders &amp; Plexers</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Multiplexer" title="Multiplexer">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Multiplexer.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Demultiplexer" title="Demultiplexer">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Demultiplexer.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="BitSelector" title="Bit Selector">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/BitSelector.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="MSB" title="MSB(Most Significant Bit)">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/MSB.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="LSB" title="LSB(Least Significant Bit)">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/LSB.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="PriorityEncoder" title="Priority Encoder">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/PriorityEncoder.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Decoder" title="Decoder">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Decoder.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="panelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Sequential Elements</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="DflipFlop" title="D flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/DflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Dlatch" title="D latch">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Dlatch.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TflipFlop" title="T flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="JKflipFlop" title="JK flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/JKflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SRflipFlop" title="SR flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SRflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TTY" title="TTY">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TTY.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Keyboard" title="Keyboard">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Keyboard.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Clock" title="Clock">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Clock.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Rom" title="ROM">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Rom.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="RAM" title="RAM">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/RAM.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="EEPROM" title="EEPROM">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/EEPROM.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="panelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Annotation</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Rectangle" title="Rectangle">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Rectangle.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Arrow" title="Arrow">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Arrow.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ImageAnnotation" title="Image Annotation">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ImageAnnotation.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Text" title="Text">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Text.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="panelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-13" aria-controls="ui-id-14" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Misc</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-14" aria-labelledby="ui-id-13" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="TwoComplement" title="Two Complement">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TwoComplement.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Flag" title="Flag">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Flag.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Splitter" title="Splitter">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Splitter.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Adder" title="Adder">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Adder.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ALU" title="ALU(Arithmetic and Logical Unit)">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ALU.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TriState" title="TriState Flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TriState.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Tunnel" title="Tunnel">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Tunnel.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Buffer" title="Buffer">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Buffer.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ControlledInverter" title="Controlled Inverter">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ControlledInverter.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TB_Input" title="TB Input">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TB_Input.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TB_Output" title="TB Output">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TB_Output.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ForceGate" title="Force Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ForceGate.svg" alt="element&#39;s image">
+        </div>
+        </div></div>
+</div>
+</div>
+<div id="smallNavbarMenu-btn">
+</div>
+
+<div class="smallscreen-navbar">
+<div id="ProjectID">Untitled</div>
+<div class="smallNavbar-navbar-ul">Project<i class="fas fa-chevron-down ulicon"></i></div>
+<div class="smallscreen-navbar-inner">
+<li class="SmallScreen-Navbar-li"> New Project</li>
+<li class="SmallScreen-Navbar-li"> Save Online</li>
+<li class="SmallScreen-Navbar-li"> Save Offine</li>
+<li class="SmallScreen-Navbar-li"> Open Offine</li>
+<li class="SmallScreen-Navbar-li"> Clear Project</li>
+<li class="SmallScreen-Navbar-li"> Recover Project</li>
+</div>
+<div class="smallNavbar-navbar-ul">Circuits<i class="fas fa-chevron-down ulicon"></i></div>
+<div class="smallscreen-navbar-inner">
+<li class="SmallScreen-Navbar-li"> New Circuit + </li>
+<li class="SmallScreen-Navbar-li"> New Verilog Module</li>
+<li class="SmallScreen-Navbar-li"> Insert SubCircuit</li>
+</div>
+<div class="smallNavbar-navbar-ul">Tools<i class="fas fa-chevron-down ulicon"></i> </div>
+<div class="smallscreen-navbar-inner">
+<li class="SmallScreen-Navbar-li"> Combinational Analysis</li>
+<li class="SmallScreen-Navbar-li"> Hex-Bin-Dec Converter</li>
+<li class="SmallScreen-Navbar-li"> Download Image</li>
+<li class="SmallScreen-Navbar-li"> Theme</li>
+<li class="SmallScreen-Navbar-li"> Export Verilog</li>
+</div>
+<div class="smallNavbar-navbar-ul">Help <i class="fas fa-chevron-down ulicon"></i></div>
+<div class="smallscreen-navbar-inner">
+<li class="SmallScreen-Navbar-li"> Tutorial</li>
+<li class="SmallScreen-Navbar-li"> User Manual</li>
+<li class="SmallScreen-Navbar-li"> Learn Digital Logic</li>
+<li class="SmallScreen-Navbar-li"> Discussion Forum</li>
+</div>
+<div class="smallNavbar-navbar-ul">
+Davidson Paige A02339425</div>
+<div class="smallscreen-navbar-inner">
+<li class=""><a href="https://circuitverse.org/users/216817">Dashboard</a></li>
+<li class=""><a href="https://circuitverse.org/users/216817/groups">My Groups</a></li>
+<div class="dropdown-divider"></div>
+<li class=""><a rel="nofollow" data-method="delete" href="https://circuitverse.org/users/sign_out">Sign Out</a></li>
+</div>
+<div id="logoWrap">
+<a href="https://circuitverse.org/"><span class="touchNavlogo"> </span></a>
+</div>
+</div>
+
+<div id="touchMenu">
+<ul><i class="fas fa-bezier-curve touchMenuIcon"></i></ul>
+<ul><i class="fas fa-cogs touchMenuIcon"></i></ul>
+<ul><i class="fas fa-wave-square touchMenuIcon"></i></ul>
+<ul><i class="fas fa-ellipsis-h touchMenuIcon"></i></ul>
+</div>
+
+<div id="TouchCe-panel">
+<div class="Touch-Ce-Menu" id="">
+<div class="ce-name">Circuit Elements <i class="fas fa-times panelclose"></i></div>
+<div style="position: relative;">
+<input type="text" class="search-input" value="" placeholder="Search..">
+<span><i class="fas search-close fa-times-circle"></i></span>
+</div>
+<div class="search-results" id="Mobile-menu"></div>
+<div class="accordion ui-accordion ui-widget ui-helper-reset" id="menu2" role="tablist"><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-15" aria-controls="ui-id-16" aria-selected="false" aria-expanded="false" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Input</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-16" aria-labelledby="ui-id-15" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Input" title="Input">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Input.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Button" title="Button">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Button.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Power" title="Power">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Power.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Ground" title="Ground">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Ground.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ConstantVal" title="Constant Value">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ConstantVal.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Stepper" title="Stepper">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Stepper.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Random" title="Random">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Random.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Counter" title="Counter">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Counter.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-17" aria-controls="ui-id-18" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Output</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-18" aria-labelledby="ui-id-17" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Output" title="Output">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Output.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="RGBLed" title="RGB Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/RGBLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="DigitalLed" title="Digital Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/DigitalLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="VariableLed" title="Variable Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/VariableLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="HexDisplay" title="Hex Display">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/HexDisplay.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SevenSegDisplay" title="Seven Segment Display">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SevenSegDisplay.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SixteenSegDisplay" title="Sixteen Segment Display">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SixteenSegDisplay.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SquareRGBLed" title="Square RGB Led">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SquareRGBLed.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="RGBLedMatrix" title="RGB Led Matrix">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/RGBLedMatrix.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-19" aria-controls="ui-id-20" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Gates</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-20" aria-labelledby="ui-id-19" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="AndGate" title="And Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/AndGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="OrGate" title="Or Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/OrGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="NotGate" title="Not Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/NotGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="XorGate" title="Xor Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/XorGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="NandGate" title="Nand Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/NandGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="NorGate" title="Nor Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/NorGate.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="XnorGate" title="Xnor Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/XnorGate.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-21" aria-controls="ui-id-22" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Decoders &amp; Plexers</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-22" aria-labelledby="ui-id-21" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Multiplexer" title="Multiplexer">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Multiplexer.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Demultiplexer" title="Demultiplexer">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Demultiplexer.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="BitSelector" title="Bit Selector">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/BitSelector.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="MSB" title="MSB(Most Significant Bit)">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/MSB.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="LSB" title="LSB(Least Significant Bit)">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/LSB.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="PriorityEncoder" title="Priority Encoder">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/PriorityEncoder.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Decoder" title="Decoder">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Decoder.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-23" aria-controls="ui-id-24" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Sequential Elements</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-24" aria-labelledby="ui-id-23" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="DflipFlop" title="D flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/DflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Dlatch" title="D latch">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Dlatch.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TflipFlop" title="T flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="JKflipFlop" title="JK flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/JKflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="SRflipFlop" title="SR flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/SRflipFlop.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TTY" title="TTY">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TTY.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Keyboard" title="Keyboard">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Keyboard.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Clock" title="Clock">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Clock.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Rom" title="ROM">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Rom.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="RAM" title="RAM">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/RAM.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="EEPROM" title="EEPROM">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/EEPROM.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-25" aria-controls="ui-id-26" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Annotation</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-26" aria-labelledby="ui-id-25" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="Rectangle" title="Rectangle">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Rectangle.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Arrow" title="Arrow">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Arrow.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ImageAnnotation" title="Image Annotation">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ImageAnnotation.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Text" title="Text">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Text.svg" alt="element&#39;s image">
+        </div>
+        </div><div class="mobilepanelHeader ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-27" aria-controls="ui-id-28" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Misc</div>
+        <div class="panel customScroll ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" id="ui-id-28" aria-labelledby="ui-id-27" role="tabpanel" aria-hidden="true" style="display: none;">
+        <div class="icon logixModules" id="TwoComplement" title="Two Complement">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TwoComplement.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Flag" title="Flag">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Flag.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Splitter" title="Splitter">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Splitter.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Adder" title="Adder">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Adder.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ALU" title="ALU(Arithmetic and Logical Unit)">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ALU.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TriState" title="TriState Flip Flop">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TriState.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Tunnel" title="Tunnel">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Tunnel.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="Buffer" title="Buffer">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/Buffer.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ControlledInverter" title="Controlled Inverter">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ControlledInverter.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TB_Input" title="TB Input">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TB_Input.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="TB_Output" title="TB Output">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/TB_Output.svg" alt="element&#39;s image">
+        </div><div class="icon logixModules" id="ForceGate" title="Force Gate">
+            <img src="./CircuitVerse - Digital Circuit Simulator online_files/ForceGate.svg" alt="element&#39;s image">
+        </div>
+        </div></div>
+</div>
+</div>
+
+<div id="touchElement-property">
+<div class="moduleProperty" id="touch-module-property"><div class="mp-name">Properties <i class="fas fa-times panelclose"></i></div><div id="moduleProperty-inner-2"></div></div>
+</div>
+
+<div id="touchtD-popover"> <div class="td-name">Timediagram <i class="fas fa-times panelclose"></i></div>
+<div id="touch-time-daigram">
+<div class="touch-timing-diagram-toolbar noSelect">
+<button class="custom-btn--primary touch-panel-button" title="Decrease Size"><span class="fas fa-caret-left timing-diagram-smaller panel-button-icon"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Increase Size"><span class="fas fa-caret-right timing-diagram-larger panel-button-icon"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Decrease Height"><span class="fas fa-sort-up timing-diagram-small-height panel-button-icon"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Increase Height"><span class="fas fa-caret-down timing-diagram-large-height panel-button-icon"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Download As Image"><span class="fas fa-download timing-diagram-download"></span></button>
+<button class="custom-btn--tertiary touch-panel-button" title="Reset Timing Diagram"><span class="fas fa-undo timing-diagram-reset"></span></button>
+<button class="custom-btn--tertiary touch-panel-button" title="Autocalibrate Cycle Units"><span class="fas fa-magic timing-diagram-calibrate"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Zoom In"><span class="fas fa-search-plus timing-diagram-zoom-in"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Zoom Out"><span class="fas fa-search-minus timing-diagram-zoom-out"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Resume Timing Diagram"><span class="fas fa-play timing-diagram-resume"></span></button>
+<button class="custom-btn--primary touch-panel-button" title="Pause Timing Diagram"><span class="fas fa-pause timing-diagram-pause"></span></button>
+</div>
+<div id="touch-cycle-unit">
+1 cycle =
+<input name="timing-diagram-units" id="timing-diagram-units" type="number" min="1" autocomplete="off" value="1000" aria-label="timing diagram units">
+Units
+</div>
+<span id="touch-timing-diagram-log"></span>
+<div id="plot-touchpanel">
+<canvas id="plotArea-touchpanel"></canvas>
+</div>
+</div>
+</div>
+
+<div id="quickmenu-Popover">
+<div id="quickMenu">
+<div class="quickMenu-name">Quick Menu <i class="fas fa-times panelclose"></i></div>
+<div id="quickMenu-Inner">
+<button class="quicMenu-align"><i class="fas fa-cloud-download-alt"></i><span class="quicMenu-align-text">Save Online<span></span></span></button>
+<button class="quicMenu-align"><i class="fas fa-download"></i><span class="quicMenu-align-text">Save Offine<span></span></span></button>
+<button class="quicMenu-align"><i class="fas fa-folder-open"></i><span class="quicMenu-align-text">Open Offine<span></span></span></button>
+<button class="quicMenu-align"><i class="fas fa-images"></i><span class="quicMenu-align-text">Dowload Image<span></span></span></button>
+<button class="quicMenu-align"><i class="fas fa-copy"></i> <span class="quicMenu-align-text">Copy Selected<span></span></span></button>
+<button class="quicMenu-align"><i class="fas fa-paste"></i><span class="quicMenu-align-text">Paste Selected <span></span></span></button>
+<button class="quicMenu-align"><i class="fas fa-object-ungroup"></i><span class="quicMenu-align-text">Selection Tool<span></span></span></button>
+<button class="quicMenu-align QuickMenuIcon"><a data-toggle="modal" data-target=".issue"><span class="fa fa-bug"></span><span class="quicMenu-align-text">&nbsp;&nbsp;Report issue<span></span></span></a></button>
+</div>
+</div>
+</div>
+
+<div id="liveMenu">
+<ul><i class="fas fa-compress-arrows-alt liveMenuIcon"></i></ul>
+<ul><i class="fas fa-trash-alt liveMenuIcon"></i></ul>
+<ul><i class="fas fa-undo liveMenuIcon"></i></ul>
+<ul><i class="fas fa-redo liveMenuIcon"></i></ul>
+</div>
+
+<div id="potraidLockBg">
+</div>
+<div id="lockPortaidMode">
+<span class="portaidIcon"> </span>
+<span id="portaidModeText">Please switch to the landscape mode and refresh to access the simulator</span>
+</div>
+<div class="noSelect defaultCursor layoutElementPanel draggable-panel draggable-panel-css " style="z-index: 99; display: none;">
+<div class="panel-header">Layout Elements
+<span class="fas fa-minus-square minimize"></span>
+<span class="fas fa-external-link-square-alt maximize"></span>
+</div>
+<div class="panel-body">
+<div class="search-results"></div>
+<div class="accordion ui-accordion ui-widget ui-helper-reset" id="subcircuitMenu" role="tablist"><p>No layout elements available</p></div>
+</div>
+</div>
+<div class="timing-diagram-panel draggable-panel" id="time-Diagram" style="z-index: 99;">
+<div class="panel-header">Timing Diagram
+<span class="fas fa-minus-square minimize panel-button" style="display: none;"></span>
+<span class="fas fa-external-link-square-alt maximize panel-button-icon" style="display: inline;"></span>
+</div>
+<div class="panel-body" style="display: none;">
+<div class="timing-diagram-toolbar noSelect">
+<button class="custom-btn--primary panel-button" title="Decrease Size"><span class="fas fa-chevron-left timing-diagram-smaller panel-button-icon"></span></button>
+<button class="custom-btn--primary panel-button" title="Increase Size"><span class="fas fa-chevron-right timing-diagram-larger panel-button-icon"></span></button>
+<button class="custom-btn--primary panel-button" title="Decrease Height"><span class="fas fa-chevron-up timing-diagram-small-height panel-button-icon"></span></button>
+<button class="custom-btn--primary panel-button" title="Increase Height"><span class="fas fa-chevron-down timing-diagram-large-height panel-button-icon"></span></button>
+<button class="custom-btn--primary panel-button" title="Download As Image"><span class="fas fa-download timing-diagram-download"></span></button>
+<button class="custom-btn--tertiary panel-button" title="Reset Timing Diagram"><span class="fas fa-undo timing-diagram-reset"></span></button>
+<button class="custom-btn--tertiary panel-button" title="Autocalibrate Cycle Units"><span class="fas fa-magic timing-diagram-calibrate"></span></button>
+<button class="custom-btn--primary panel-button" title="Zoom In"><span class="fas fa-search-plus timing-diagram-zoom-in"></span></button>
+<button class="custom-btn--primary panel-button" title="Zoom Out"><span class="fas fa-search-minus timing-diagram-zoom-out"></span></button>
+<button class="custom-btn--primary panel-button" title="Resume auto-scroll"><span class="fas fa-play timing-diagram-resume"></span></button>
+<button class="custom-btn--primary panel-button" title="Pause auto-scroll"><span class="fas fa-pause timing-diagram-pause"></span></button>
+1 cycle =
+<input id="timing-diagram-units" type="number" min="1" autocomplete="off" value="1000">
+Units
+<span id="timing-diagram-log"></span>
+</div>
+<div id="plot">
+<canvas id="plotArea" width="0" height="0" style="height: 22px; width: 0px;"></canvas>
+</div>
+</div>
+</div>
+<div class="testbench-manual-panel draggable-panel noSelect defaultCursor" style="z-index: 99;">
+<div class="panel-header">Testbench
+<span class="fas fa-minus-square minimize panel-button" style="display: none;"></span>
+<span class="fas fa-external-link-square-alt maximize panel-button-icon" style="display: inline;"></span>
+</div>
+<div class="panel-body tb-test-not-null tb-panel-hidden" style="display: none;">
+<div class="tb-manual-test-data">
+<div style="margin-bottom: 10px; overflow: auto;">
+<span class="tb-data" id="data-title"><b>Test:</b> <span></span></span>
+<span class="tb-data" id="data-type"><b>Type:</b> <span></span></span>
+</div>
+<button class="custom-btn--basic panel-button tb-dialog-button" id="edit-test-btn">Edit</button>
+<button class="custom-btn--tertiary panel-button tb-dialog-button" id="remove-test-btn">Remove</button>
+</div>
+<div style="overflow: auto; margin-bottom: 10px;">
+<div class="tb-manual-test-buttons tb-group-buttons">
+<span style="line-height: 24px; margin-right: 5px;"><b>Group: </b></span>
+<button class="custom-btn--basic panel-button tb-case-button-left tb-case-button" id="prev-group-btn"><i class="tb-case-arrow tb-case-arrow-left"></i></button>
+<span class="tb-test-label group-label"></span>
+<button class="custom-btn--basic panel-button tb-case-button-right tb-case-button" id="next-group-btn"><i class="tb-case-arrow tb-case-arrow-right"></i></button>
+</div>
+<div class="tb-manual-test-buttons tb-case-buttons">
+<span style="line-height: 24px; margin-right: 5px;"><b>Case: </b></span>
+<button class="custom-btn--basic panel-button tb-case-button-left tb-case-button" id="prev-case-btn"><i class="tb-case-arrow tb-case-arrow-left"></i></button>
+<span class="tb-test-label case-label"></span>
+<button class="custom-btn--basic panel-button tb-case-button-right tb-case-button" id="next-case-btn"><i class="tb-case-arrow tb-case-arrow-right"></i></button>
+</div>
+</div>
+<div style="text-align: center;">
+<table class="tb-manual-table">
+<tbody><tr id="tb-manual-table-labels">
+<th>LABELS</th>
+</tr>
+<tr id="tb-manual-table-bitwidths">
+<td>Bitwidth</td>
+</tr>
+<tr id="tb-manual-table-current-case">
+<td>Current Case</td>
+</tr>
+<tr id="tb-manual-table-test-result">
+<td>Result</td>
+</tr>
+</tbody></table>
+</div>
+<div style="display: table; margin-top: 20px; margin-left: 8px;">
+<div class="testbench-manual-panel-buttons">
+<button class="custom-btn--basic panel-button tb-dialog-button" id="validate-btn">Validate</button>
+<button class="custom-btn--primary panel-button tb-dialog-button" id="runall-btn">Run All</button>
+</div>
+<span class="testbench-runall-label">
+<span id="runall-summary">placeholder</span> Tests Passed <span id="runall-detailed-link" style="color: #18A2CD;">View Detailed</span>
+</span>
+</div>
+</div>
+<div class="panel-body tb-test-null" style="display: none;">
+<div class="tb-manual-test-data">
+<div style="margin-bottom: 10px; overflow: auto;">
+<p><i>No Test is attached to the current circuit</i></p>
+</div>
+<button class="custom-btn--primary panel-button tb-dialog-button" id="attach-test-btn">Attach Test</button>
+</div>
+</div>
+</div>
+<div id="MessageDiv"><div class="alert alert-danger" role="alert" id="3683" style="display: none;"> BitWidth Error: 1 and 4</div><div class="alert alert-success" role="alert" id="2750" style="display: none;"> We have saved your project: Davidson-Paige-Assn2 in our servers.</div><div class="alert alert-success" role="alert" id="9122" style="display: none;"> We have saved your project: Davidson-Paige-Assn2 in our servers.</div><div class="alert alert-danger" role="alert" id="1757" style="display: none;"> Contention Error: 1 and 0 at NandGate in OR</div><div class="alert alert-danger" role="alert" id="8439" style="display: none;"> Contention Error: 1 and 0 at NandGate in OR</div><div class="alert alert-danger" role="alert" id="9262" style="display: none;"> Contention Error: 0 and 1 at NandGate in OR</div><div class="alert alert-danger" role="alert" id="8144" style="display: none;"> Contention Error: 0 and 1 at Input in XOR</div><div class="alert alert-danger" role="alert" id="7244" style="display: none;"> Contention Error: 1 and 0 at Input in XOR</div><div class="alert alert-danger" role="alert" id="8598" style="display: none;"> Contention Error: 0 and 1 at Input in XOR</div><div class="alert alert-success" role="alert" id="9517" style="display: none;"> We have saved your project: Davidson-Paige-Assn2 in our servers.</div><div class="alert alert-success" role="alert" id="8159" style="display: none;"> We have saved your project: Davidson-Paige-Assn2 in our servers.</div><div class="alert alert-success" role="alert" id="4289" style="display: none;"> No space. Move or delete some nodes to make space.</div><div class="alert alert-success" role="alert" id="1012" style="display: none;"> We have saved your project: Davidson-Paige-Assn2 in our servers.</div><div class="alert alert-success" role="alert" id="3648" style="display: none;"> We have saved your project: Davidson-Paige-Assn2 in our servers.</div><div class="alert alert-danger" role="alert" id="8164" style="display: none;"> BitWidth Error: 4 and 1</div><div class="alert alert-danger" role="alert" id="1885" style="display: none;"> BitWidth Error: 4 and 1</div><div class="alert alert-danger" role="alert" id="6023" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="9392" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="989" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="1291" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="427" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="491" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="3307" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="9995" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="7813" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="1682" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="208" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="6424" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="6031" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="5795" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="4010" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="3372" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="7827" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="2831" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="9153" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="3648" style="display: none;"> BitWidth Error: 8 and 1</div><div class="alert alert-danger" role="alert" id="704" style="display: none;"> BitWidth Error: 1 and 4</div><div class="alert alert-danger" role="alert" id="3968" style="display: none;"> BitWidth Error: 4 and 1</div></div>
+<div class="noSelect defaultCursor draggable-panel draggable-panel-css" id="verilogEditorPanel" style="z-index: 99;">
+<div class="panel-header">Verilog Module
+<span class="fas fa-minus-square minimize"></span>
+<span class="fas fa-external-link-square-alt maximize"></span>
+</div>
+<div class="panel-body">
+<div class="layout-body">
+<button class="largeButton btn logixButton btn-xs custom-btn--tertiary" id="resetVerilogCode">Reset Code</button>
+<button class="largeButton btn logixButton btn-xs custom-btn--primary" id="saveVerilogCode">Save Code</button>
+<div id="verilogOutput">
+This is an experimental module. The code is not saved unless the "Save Code" button is clicked.
+</div>
+</div>
+</div>
+<div class="panel-header text-center">Apply Themes</div>
+<div class="panel-body">
+<div class="layout-body">
+<div>
+<p class="text-center mb-2">Select a theme: </p>
+<select id="selectVerilogTheme" class="applyTheme" style="width:90%;" aria-label="select verilog theme">
+<optgroup label="Light Themes">
+<option>default</option>
+<option>solarized</option>
+<option>elegant</option>
+<option>neat</option>
+<option>idea</option>
+<option>neo</option>
+</optgroup>
+<optgroup label="Dark Themes">
+<option>blackboard</option>
+<option>cobalt</option>
+<option>night</option>
+<option>the-matrix</option>
+<option>midnight</option>
+<option>monokai</option>
+</optgroup>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="moduleProperty noSelect effect1 properties-panel draggable-panel draggable-panel-css  guide_2" id="moduleProperty" style="z-index: 100;">
+<div id="moduleProperty-title" class="noSelect panel-header">Properties
+<span class="fas fa-minus-square minimize"></span>
+<span class="fas fa-external-link-square-alt maximize"></span>
+</div>
+<div class="panel-body"> <div id="moduleProperty-inner"><div class="moduleProperty-header">Project Properties</div><p><span>Project:</span> <input id="projname" class="objectPropertyAttribute" type="text" autocomplete="off" name="setProjectName" value="Davidson-Paige-Assn2" aria-label="project"></p><p><span>Circuit:</span> <input id="circname" class="objectPropertyAttribute" type="text" autocomplete="off" name="changeCircuitName" value="Counter" aria-label="circuit"></p><p><span>Clock Time (ms):</span> <input class="objectPropertyAttribute" min="50" type="number" style="width: 100px; display: none;" step="10" name="changeClockTime" value="500" aria-label="clock time"><div class="input-group  "><div class="input-group-prepend"><button style=" border:none; min-width: 2.5rem" class="btn btn-decrement btn-outline-secondary" type="button"><strong>-</strong></button></div><input type="text" inputmode="decimal" style="text-align: center" class="form-control objectPropertyAttribute" placeholder=""><div class="input-group-append"><button style=" border:none; min-width: 2.5rem" class="btn btn-increment btn-outline-secondary" type="button"><strong>+</strong></button></div></div></p><p><span>Clock Enabled:</span> <label class="switch"> <input type="checkbox" checked="" class="objectPropertyAttributeChecked" name="changeClockEnable" aria-label="clock enabled"> <span class="slider"></span></label></p><p><span>Lite Mode:</span> <label class="switch"> <input type="checkbox" class="objectPropertyAttributeChecked" name="changeLightMode" aria-label="lite mode"> <span class="slider"></span> </label></p><p><button type="button" class="objectPropertyAttributeChecked btn btn-xs custom-btn--primary" name="toggleLayoutMode">Edit Layout</button><button type="button" class="objectPropertyAttributeChecked btn btn-xs custom-btn--tertiary" name="deleteCurrentCircuit">Delete Circuit</button> </p></div></div>
+</div>
+<div id="customShortcutDialog" title="Keybinding Preference"><div id="edit" tabindex="0">
+<span style="font-size: 14px;">Press Desire Key Combination &amp; press Enter or press ESC to cancel.</span>
+<div id="pressedKeys"></div>
+<div id="warning"></div>
+</div><div id="heading">
+  <span>Command</span>
+  <span>Keymapping</span>
+</div><div id="preference" class="customScroll">
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">New Circuit</span>
+        <span id="keyword">Shift + N</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Save Online</span>
+        <span id="keyword">Meta + S</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Save Offline</span>
+        <span id="keyword">Meta + Alt + S</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Download as Image</span>
+        <span id="keyword">Meta + D</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Open Offline</span>
+        <span id="keyword">Meta + O</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Insert Sub-circuit</span>
+        <span id="keyword">Shift + C</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Combinational Analysis</span>
+        <span id="keyword">Shift + A</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Direction Up</span>
+        <span id="keyword">Up</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Direction Down</span>
+        <span id="keyword">Down</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Direction Left</span>
+        <span id="keyword">Left</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Direction Right</span>
+        <span id="keyword">Right</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Insert Label</span>
+        <span id="keyword">Meta + L</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Label Direction Up</span>
+        <span id="keyword">Alt + Up</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Label Direction Down</span>
+        <span id="keyword">Alt + Down</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Label Direction Left</span>
+        <span id="keyword">Alt + Left</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Label Direction Right</span>
+        <span id="keyword">Alt + Right</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Move Element Up</span>
+        <span id="keyword">Shift + Up</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Move Element Down</span>
+        <span id="keyword">Shift + Down</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Move Element Left</span>
+        <span id="keyword">Shift + Left</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Move Element Right</span>
+        <span id="keyword">Shift + Right</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Hotkey Preference</span>
+        <span id="keyword">F8</span>
+        </div>
+    </div>
+    
+        <div>
+        <span id="edit-icon"></span>
+        <div><span id="command">Open Documentation</span>
+        <span id="keyword">F1</span>
+        </div>
+    </div>
+    </div></div>
+<div id="layoutDialog" class="draggable-panel draggable-panel-css " style="z-index: 99; display: none;">
+<div class="panel-header">Layout
+<span class="fas fa-minus-square minimize"></span>
+<span class="fas fa-external-link-square-alt maximize"></span>
+</div>
+<div class="layout-body panel-body" id="layout-body">
+<div class="">
+<button class="zoomButton btn-lg" id="decreaseLayoutWidth" title="Decrease Width">
+<span class="fa fa-minus" aria-hidden="true"></span>
+</button>
+<span>Width</span>
+<button class="zoomButton btn-lg" id="increaseLayoutWidth" title="Increase Width">
+<span class="fa fa-plus" aria-hidden="true"></span>
+</button>
+</div>
+<div class="">
+<button class="zoomButton btn-lg" id="decreaseLayoutHeight" title="Decrease Height">
+<span class="fa fa-minus" aria-hidden="true"></span>
+</button>
+<span>Height</span>
+<button class="zoomButton btn-lg" id="increaseLayoutHeight" title="Increase Height">
+<span class="fa fa-plus" aria-hidden="true"></span>
+</button>
+</div>
+<div class="">
+<span>Reset all nodes:</span>
+<button class="zoomButton btn-lg" id="layoutResetNodes">
+<span class="fa fa-sync" aria-hidden="true" title="Reset"></span>
+</button>
+</div>
+<div class="layout-title">
+<span>Title</span>
+<div class="layout--btn-group">
+<button class="zoomButton-up btn-lg no-select" id="layoutTitleUp">
+<svg id="Group_304" data-name="Group 304" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+<g id="Rectangle_1072" data-name="Rectangle 1072" fill="none" stroke="#f1f9ff" stroke-width="2">
+<rect width="30" height="30" rx="10" stroke="none"></rect>
+<rect x="1" y="1" width="28" height="28" rx="9" fill="none"></rect>
+</g>
+<path id="Path_36" data-name="Path 36" d="M4.7,6.1,0,1.4,1.4,0,4.7,3.3,8,0,9.4,1.4Z" transform="translate(19.4 17.755) rotate(180)" fill="#fff"></path>
+</svg>
+</button>
+<button class="zoomButton-down btn-lg no-select" id="layoutTitleDown">
+<svg id="Group_305" data-name="Group 305" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+<g id="Rectangle_1072" data-name="Rectangle 1072" fill="none" stroke="#f1f9ff" stroke-width="2">
+<rect width="30" height="30" rx="10" stroke="none"></rect>
+<rect x="1" y="1" width="28" height="28" rx="9" fill="none"></rect>
+</g>
+<path id="Path_36" data-name="Path 36" d="M4.7,6.1,0,1.4,1.4,0,4.7,3.3,8,0,9.4,1.4Z" transform="translate(10 11.655)" fill="#fff"></path>
+</svg>
+</button>
+<button class="zoomButton-left btn-lg no-select" id="layoutTitleLeft">
+<svg id="Group_306" data-name="Group 306" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+<g id="Rectangle_1072" data-name="Rectangle 1072" fill="none" stroke="#f1f9ff" stroke-width="2">
+<rect width="30" height="30" rx="10" stroke="none"></rect>
+<rect x="1" y="1" width="28" height="28" rx="9" fill="none"></rect>
+</g>
+<path id="Path_36" data-name="Path 36" d="M4.7,6.1,0,1.4,1.4,0,4.7,3.3,8,0,9.4,1.4Z" transform="translate(18.1 9.655) rotate(90)" fill="#fff"></path>
+</svg>
+</button>
+<button class="zoomButton-right btn-lg no-select" id="layoutTitleRight">
+<svg id="Group_307" data-name="Group 307" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+<g id="Rectangle_1072" data-name="Rectangle 1072" fill="none" stroke="#f1f9ff" stroke-width="2">
+<rect width="30" height="30" rx="10" stroke="none"></rect>
+<rect x="1" y="1" width="28" height="28" rx="9" fill="none"></rect>
+</g>
+<path id="Path_36" data-name="Path 36" d="M4.7,6.1,0,1.4,1.4,0,4.7,3.3,8,0,9.4,1.4Z" transform="translate(12 19.055) rotate(-90)" fill="#fff"></path>
+</svg>
+</button>
+</div>
+</div>
+<div class="layout-title--enable">
+<span>Title Enabled:</span>
+<label class="switch">
+<input type="checkbox" checked="" id="toggleLayoutTitle">
+<span class="slider"></span>
+</label>
+</div>
+<div class="">
+<button class="Layout-btn custom-btn--primary" id="saveLayout">
+Save
+</button>
+<button class="Layout-btn custom-btn--tertiary" id="cancelLayout">
+Cancel
+</button>
+</div>
+</div>
+</div>
+<div id="saveImageDialog" class="noSelect" style="display: none;" title="Render Image">
+<div class="download-dialog-section-1">
+<label class="option custom-radio inline"><input type="radio" name="imgType" value="png" checked="checked">PNG<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="imgType" value="jpeg">JPEG<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="imgType" value="svg">SVG<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="imgType" value="bmp">BMP<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="imgType" value="gif">GIF<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="imgType" value="tiff">TIFF<span></span></label>
+</div>
+<div class="download-dialog-section-2">
+<div class="option inline btn-group btn-group-toggle" style="border: none;" data-toggle="buttons">
+<div class="btn inactive-btn" id="radio-full" role="button" aria-pressed="false">
+<input type="radio" name="view" value="full"> Full Circuit View
+</div>
+<div class="btn active active-btn" id="radio-current" role="button" aria-pressed="true">
+<input type="radio" name="view" value="current" checked="checked">Current View
+</div>
+</div>
+<div class="download-dialog-section-2_2">
+<label class="cb-checkbox"><span class="cb-inner"><i><input type="checkbox" name="transparent" value="transparent"></i></span>Transparent Background</label>
+</div>
+</div>
+<div class="download-dialog-section-3">
+<span>Resolution:</span>
+<label class="option custom-radio inline"><input type="radio" name="resolution" value="1" checked="checked">1x<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="resolution" value="2">2x<span></span></label>
+<label class="option custom-radio inline"><input type="radio" name="resolution" value="4">4x<span></span></label>
+</div>
+</div>
+<div id="colorThemesDialog" class="customScroll colorThemesDialog" tabindex="0" style="display: none;" title="Select Theme"></div>
+<div id="CustomColorThemesDialog" class="customScroll" tabindex="0" style="display: none;" title="Custom Theme"></div>
+<input type="file" id="importThemeFile" name="themeFile" style="display:none" multiple="">
+<div class="simulation" id="simulation">
+<div id="restrictedDiv" class="alert alert-danger display--none"></div>
+<div class="canvasArea" id="canvasArea" style="height: 733px;">
+<canvas id="backgroundArea" style="position: absolute; left: -10px; top: -17.5px; z-index: 0; width: 1424px; height: 833px;" width="2848" height="1666"></canvas>
+<canvas id="simulationArea" style="position: absolute; left: 0px; top: 0px; z-index: 1; width: 100%; height: 100%; cursor: default;" width="2648" height="1466"></canvas>
+<div id="miniMap" style="height: 143px; width: 255px; display: none;">
+<canvas id="miniMapArea" style="position: absolute; left: 0; top: 0; z-index: 3;" width="255" height="143"></canvas>
+</div>
+<div id="contextMenu" oncontextmenu="return false;" style="visibility: hidden;">
+<ul>
+<li onclick="menuItemClicked(2)">Paste</li>
+<li onclick="menuItemClicked(0)">Copy</li>
+<li onclick="menuItemClicked(1)">Cut</li>
+<li onclick="menuItemClicked(3)">Delete</li>
+<li onclick="menuItemClicked(4)">Undo</li>
+<li onclick="menuItemClicked(5)">New Circuit</li>
+<li onclick="menuItemClicked(6)">Insert SubCircuit</li>
+<li onclick="menuItemClicked(7)">Center Focus</li>
+</ul>
+</div>
+<div id="Help" class="">Digital Led ToolTip: Digital LED glows high when input is High(1).</div>
+<div class="sk-folding-cube loadingIcon" style="position: absolute; right: 50%; bottom: 50%; z-index: 100; display: none;">
+<div class="sk-cube1 sk-cube"></div>
+<div class="sk-cube2 sk-cube"></div>
+<div class="sk-cube4 sk-cube"></div>
+<div class="sk-cube3 sk-cube"></div>
+</div>
+</div>
+</div>
+<div id="ExportCircuitFilesDialog" class="customScroll" tabindex="0" style="display: none;" title="Export as file"></div>
+<div id="ImportCircuitFilesDialog" class="customScroll" tabindex="0" style="display: none;" title="Import as file"></div>
+<div id="combinationalAnalysis" style="display: none;" title="BooleanLogicTable"></div>
+<div id="setTestbenchData" style="display: none;" title="Create Test"></div>
+<div id="testbenchValidate" style="display: none;" title="Testbench Validation"></div>
+
+<div id="insertSubcircuitcontent"><span><p>Looks like there are no other circuits which doesn't have this circuit as a dependency. Create a new one!</p></span><a class="btn btn-xs custom-btn--primary dropdown-item text-center logixButton pl-1" id="newCircuit">New Circuit +</a></div>
+<div id="openProjectDialog" style="display: none;" title="Open Project"></div>
+<div id="bitconverterprompt" title="Dec-Bin-Hex-Converter" style="display: none;">
+<label>Decimal value</label><br><input type="text" id="decimalInput" value="16" label="Decimal" name="text1"><br><br>
+<label>Binary value</label><br><input type="text" id="binaryInput" value="0b10000" label="Binary" name="text1"><br><br>
+<label>Binary-coded decimal value</label><br><input type="text" id="bcdInput" value="10110" label="BCD" name="text1"><br><br>
+<label>Octal value</label><br><input type="text" id="octalInput" value="020" label="Octal" name="text1"><br><br>
+<label>Hexadecimal value</label><br><input type="text" id="hexInput" value="0x10" label="Hex" name="text1"><br><br>
+</div>
+
+<div class="report-sidebar">
+<a type="button" class="btn btn-primary text-light" data-toggle="modal" data-target=".issue">
+<span class="fa fa-bug"></span>&nbsp;&nbsp;Report an issue</a>
+</div>
+
+<div class="modal fade issue" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="container my-2">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+<div class="container text-center">
+<h4>Report an issue</h4>
+</div>
+<hr>
+<div class="container my-2 text-center" id="result"></div>
+<label id="report-label" style="font-weight: lighter;"><b>Describe your issue:</b></label>
+<div class="form-group">
+<textarea class="form-control border-primary" id="issuetext" rows="3"></textarea>
+</div>
+<label for="emailtext" id="email-label" style="font-weight: lighter"><b>Email</b><span> [Optional]</span>:</label>
+<div class="form-group">
+<input class="form-control border-primary" type="email" id="emailtext" rows="3">
+</div>
+<div class="container">
+<center>
+<button type="submit" id="report" class="btn btn-primary">
+Report
+</button>
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+window.addEventListener("load", function() {
+  $('#newCircuit').click(function () {
+    return $('#insertSubcircuitDialog').dialog('close');
+  });
+})
+</script>
+<script>
+window.addEventListener("load", function() {
+})
+</script>
+<script>
+  const embed = false;
+  user_id = " 216817 - Davidson Paige A02339425";
+  var listenToSimulator=true
+  restrictedElements = [];
+</script>
+
+<script>
+window.addEventListener("load", function() {
+  $('.dropdown-toggle').hover(function () {
+    $('.dropdown.open').removeClass('open');
+    $(this).parent('.dropdown').addClass('open');
+  });
+})
+</script>
+<link rel="stylesheet" type="text/css" href="./CircuitVerse - Digital Circuit Simulator online_files/restrictedElements.css">
+<script type="text/javascript" src="./CircuitVerse - Digital Circuit Simulator online_files/metadata.json"></script>
+<script>
+window.addEventListener("load", function() {
+  $(function(){
+      $(".btn-group-toggle").twbsToggleButtons();
+    });
+
+  $(function(){
+    $("#openProjectDialog").checkBo();
+    $(".download-dialog-section-2_2").checkBo();
+  });
+});
+</script>
+<script src="./CircuitVerse - Digital Circuit Simulator online_files/data.js"></script>
+
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable" aria-describedby="insertSubcircuitDialog" aria-labelledby="ui-id-29" style="height: auto; width: 450px; top: 286.75px; left: 437px; display: none;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-29" class="ui-dialog-title">Insert SubCircuit</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="insertSubcircuitDialog" class="subcircuitdialog ui-dialog-content ui-widget-content" style="width: auto; min-height: 37.5px; max-height: 687.5px; height: auto;"><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="78464083445">DieRoller<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="12234595722">RGBLED<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="56892571569">Counter<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="95998352544">NOT<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="62946900970">AND<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="23206906745">OR<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="56154120973">XOR<span></span></label><label class="option custom-radio inline"><input type="radio" name="subCircuitId" value="90242210947">NOR<span></span></label></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-corner-all ui-widget">Insert SubCircuit</button></div></div></div></body></html>

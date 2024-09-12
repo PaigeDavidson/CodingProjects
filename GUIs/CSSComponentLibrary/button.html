@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="button.css">
+    <script src="button.js" defer></script>
+    <title>Button</title>
+</head>
+    <h1>Button</h1>
+<body>
+    <div class="sidenav">
+        <a href="/Users/user/CSSComponentLibrary/home.html">Home</a>
+        <a href="/Users/user/CSSComponentLibrary/navbar.html">Navbar</a>
+        <a href="/Users/user/CSSComponentLibrary/navigationDrawer.html">Navigation Drawer</a>
+        <a href="/Users/user/CSSComponentLibrary/button.html">Button</a>
+        <a href="/Users/user/CSSComponentLibrary/FAB.html">Floating Action Button (FAB)</a>
+        <a href="/Users/user/CSSComponentLibrary/imageCarousel.html">Image Carousel</a>
+        <a href="/Users/user/CSSComponentLibrary/loadingSpinners.html">Loading Spinners</a>
+    </div>
+    <div class="codeBlocks">
+    <div>
+        <h2>Example</h2>
+        <div class="buttons">
+            <button class="button" id="theButton">
+                <!-- add your button text here -->
+                Button
+            </button>
+    
+            <!-- A button with an icon: -->
+            <button class="button" id="theButton2">
+                <a><span class="material-icons">favorite</span></a>
+                Button
+            </button>
+        </div>
+        
+    </div>
+
+    <h2>Description</h2>
+        <div class="code">
+            <p class="paragraph">
+                This is a button to be used anywhere on a web page.
+            </p>
+            <p class="paragraph">
+                Displayed above are two versions of the same button, one with an icon and one without. If you 
+                only need one button, be sure to only copy the HTML and JS that correspond to the particular button. 
+                The CSS will apply to both buttons and can be copied exaclty.
+            </p>
+            <p class="paragraph"> 
+                You can add any icon to the button you would like by changing the material icons 'add' to the name of 
+                any icon you find at: <a class = "googleLink" href="https://fonts.google.com/icons">Google Material Icons Site</a>
+            </p>
+            <p class="paragraph"> 
+                The colors can be changed by changing the colors in the CSS file in the :root{} section. 
+            </p>
+            <p class="paragraph"> 
+                It is important to remember to link the Google stylesheet (if you are going to add an icon), 
+                your own CSS file, and your own javaScript file at the top of your HTML file in order for 
+                the component to work properly.
+            </p>
+        </div>
+
+    <div>
+        <h2>HTML</h2>
+        <pre class="code" id="button-html"></pre>
+    </div>
+    <div>
+        <h2>CSS</h2>
+        <pre class="code" id="button-css">
+:root{
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+    background-color: var(--pink);
+    border: none;
+    border-radius: 4px;
+    color: var(--cream);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.2s;
+    cursor: pointer;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    margin: 10px;
+   
+  }
+.button:hover{
+    background-color: var(--darkBlue);
+}
+.button:active {
+    background-color: var(--lightBlue); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+}
+.button a {
+    margin-right: 8px; 
+}
+        </pre>
+    </div>
+    <div>
+        <h2>JS</h2>
+        <pre class="code" id="button-js">
+const button = document.getElementById("theButton");
+const button2 = document.getElementById("theButton2");
+
+button.addEventListener("click", () => {
+    console.log("button was clicked");
+    //add you button action here
+});
+button2.addEventListener("click", () => {
+    console.log("button 2 was clicked");
+    //add you button action here
+});
+        </pre>
+    </div>
+</div>
+</body>
+</html>

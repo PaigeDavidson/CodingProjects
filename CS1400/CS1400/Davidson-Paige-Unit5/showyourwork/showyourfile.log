@@ -1,0 +1,11 @@
+/.idea/.gitignore
+/#3.py
+/task1.py
+/task2.py
+/blobber.py
+/task3.py
+/wordinator.py
+/modules/wordinator.py
+/modules/blobber.py
+/plan2.txt
+/plan3.txt

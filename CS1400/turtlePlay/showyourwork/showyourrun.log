@@ -1,0 +1,439 @@
+"r","3","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"890554","0"
+"o","3",,"
+Process finished with exit code 0
+",,"system","895641","0"
+"r","4","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"905263","0"
+"o","4",,"
+Process finished with exit code 0
+",,"system","909568","0"
+"r","5","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"1816517","0"
+"o","5",,"Traceback (most recent call last):
+",,"stderr","1822653","0"
+"o","5",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 11, in <module>
+",,"stderr","1822653","0"
+"o","5",,"    turtle.circle(50)
+",,"stderr","1822653","0"
+"o","5",,"  File ""<string>"", line 8, in circle
+",,"stderr","1822653","0"
+"o","5",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1995, in circle
+",,"stderr","1822653","0"
+"o","5",,"    self._rotate(-w2)
+",,"stderr","1822655","0"
+"o","5",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 3280, in _rotate
+",,"stderr","1822655","0"
+"o","5",,"    self._update()
+",,"stderr","1822655","0"
+"o","5",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2661, in _update
+",,"stderr","1822655","0"
+"o","5",,"    self._update_data()
+",,"stderr","1822656","0"
+"o","5",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2647, in _update_data
+",,"stderr","1822656","0"
+"o","5",,"    self.screen._incrementudc()
+",,"stderr","1822656","0"
+"o","5",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1293, in _incrementudc
+",,"stderr","1822656","0"
+"o","5",,"    raise Terminator
+",,"stderr","1822656","0"
+"o","5",,"turtle.Terminator
+",,"stderr","1822656","0"
+"o","5",,"
+Process finished with exit code 1
+",,"system","1822680","0"
+"r","6","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"1903186","0"
+"o","6",,"
+Process finished with exit code 0
+",,"system","1927630","0"
+"r","7","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2375180","0"
+"o","7",,"Traceback (most recent call last):
+",,"stderr","2375715","0"
+"o","7",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 11, in <module>
+",,"stderr","2375715","0"
+"o","7",,"    color = randint(5)
+",,"stderr","2375715","0"
+"o","7",,"TypeError: Random.randint() missing 1 required positional argument: 'b'
+",,"stderr","2375715","0"
+"o","7",,"
+Process finished with exit code 1
+",,"system","2375728","0"
+"r","8","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2395425","0"
+"o","8",,"Traceback (most recent call last):
+",,"stderr","2403802","0"
+"o","8",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 28, in <module>
+",,"stderr","2403802","0"
+"o","8",,"    turtle.circle(50)
+",,"stderr","2403802","0"
+"o","8",,"  File ""<string>"", line 8, in circle
+",,"stderr","2403802","0"
+"o","8",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1991, in circle
+",,"stderr","2403802","0"
+"o","8",,"    self.speed(speed)
+",,"stderr","2403803","0"
+"o","8",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2175, in speed
+",,"stderr","2403803","0"
+"o","8",,"    self.pen(speed=speed)
+",,"stderr","2403804","0"
+"o","8",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2460, in pen
+",,"stderr","2403804","0"
+"o","8",,"    self._update()
+",,"stderr","2403805","0"
+"o","8",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2661, in _update
+",,"stderr","2403805","0"
+"o","8",,"    self._update_data()
+",,"stderr","2403806","0"
+"o","8",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2647, in _update_data
+",,"stderr","2403806","0"
+"o","8",,"    self.screen._incrementudc()
+",,"stderr","2403806","0"
+"o","8",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1293, in _incrementudc
+",,"stderr","2403806","0"
+"o","8",,"    raise Terminator
+",,"stderr","2403807","0"
+"o","8",,"turtle.Terminator
+",,"stderr","2403807","0"
+"o","8",,"
+Process finished with exit code 1
+",,"system","2403827","0"
+"r","9","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2419254","0"
+"o","9",,"Traceback (most recent call last):
+",,"stderr","2423148","0"
+"o","9",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 29, in <module>
+",,"stderr","2423148","0"
+"o","9",,"    turtle.circle(50)
+",,"stderr","2423148","0"
+"o","9",,"  File ""<string>"", line 8, in circle
+",,"stderr","2423148","0"
+"o","9",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1994, in circle
+",,"stderr","2423148","0"
+"o","9",,"    self._rotate(w)
+",,"stderr","2423148","0"
+"o","9",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 3280, in _rotate
+",,"stderr","2423148","0"
+"o","9",,"    self._update()
+",,"stderr","2423148","0"
+"o","9",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2661, in _update
+",,"stderr","2423148","0"
+"o","9",,"    self._update_data()
+",,"stderr","2423148","0"
+"o","9",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2647, in _update_data
+",,"stderr","2423148","0"
+"o","9",,"    self.screen._incrementudc()
+",,"stderr","2423148","0"
+"o","9",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1293, in _incrementudc
+",,"stderr","2423148","0"
+"o","9",,"    raise Terminator
+",,"stderr","2423148","0"
+"o","9",,"turtle.Terminator
+",,"stderr","2423148","0"
+"o","9",,"
+Process finished with exit code 1
+",,"system","2423170","0"
+"r","10","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2477512","0"
+"o","10",,"Traceback (most recent call last):
+",,"stderr","2485255","0"
+"o","10",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 32, in <module>
+",,"stderr","2485255","0"
+"o","10",,"    turtle.pendown()
+",,"stderr","2485255","0"
+"o","10",,"  File ""<string>"", line 5, in pendown
+",,"stderr","2485255","0"
+"o","10",,"turtle.Terminator
+",,"stderr","2485255","0"
+"o","10",,"
+Process finished with exit code 1
+",,"system","2485271","0"
+"r","11","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2519929","0"
+"o","11",,"
+Process finished with exit code 0
+",,"system","2523816","0"
+"r","12","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2530035","0"
+"o","12",,"Traceback (most recent call last):
+",,"stderr","2543741","0"
+"o","12",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 34, in <module>
+",,"stderr","2543741","0"
+"o","12",,"    turtle.circle(50)
+",,"stderr","2543741","0"
+"o","12",,"  File ""<string>"", line 5, in circle
+",,"stderr","2543741","0"
+"o","12",,"turtle.Terminator
+",,"stderr","2543741","0"
+"o","12",,"
+Process finished with exit code 1
+",,"system","2543768","0"
+"r","13","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"2680409","0"
+"o","13",,"Traceback (most recent call last):
+",,"stderr","2680924","0"
+"o","13",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 29, in <module>
+",,"stderr","2680924","0"
+"o","13",,"    turtle.color(color)
+",,"stderr","2680924","0"
+"o","13",,"  File ""<string>"", line 8, in color
+",,"stderr","2680924","0"
+"o","13",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2217, in color
+",,"stderr","2680924","0"
+"o","13",,"    pcolor = self._colorstr(pcolor)
+",,"stderr","2680926","0"
+"o","13",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2697, in _colorstr
+",,"stderr","2680926","0"
+"o","13",,"    return self.screen._colorstr(args)
+",,"stderr","2680926","0"
+"o","13",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1153, in _colorstr
+",,"stderr","2680926","0"
+"o","13",,"    if len(color) == 1:
+",,"stderr","2680926","0"
+"o","13",,"TypeError: object of type 'function' has no len()
+",,"stderr","2680926","0"
+"o","13",,"
+Process finished with exit code 1
+",,"system","2680940","0"
+"r","14","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"4280775","0"
+"o","14",,"
+Process finished with exit code 0
+",,"system","4284889","0"
+"r","15","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"4452089","0"
+"o","15",,"Traceback (most recent call last):
+",,"stderr","4452623","0"
+"o","15",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 30, in <module>
+",,"stderr","4452623","0"
+"o","15",,"    turtle.color(color1())
+",,"stderr","4452623","0"
+"o","15",,"TypeError: color1() missing 1 required positional argument: 'a'
+",,"stderr","4452623","0"
+"o","15",,"
+Process finished with exit code 1
+",,"system","4452637","0"
+"r","16","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"4555499","0"
+"o","16",,"
+Process finished with exit code 0
+",,"system","4562848","0"
+"r","17","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"5281942","0"
+"o","17",,"
+Process finished with exit code 0
+",,"system","5287820","0"
+"r","18","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"21020335","0"
+"o","18",,"
+Process finished with exit code 0
+",,"system","21028641","0"
+"r","19","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"21031555","0"
+"o","19",,"
+Process finished with exit code 0
+",,"system","21039275","0"
+"r","20","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"21740444","0"
+"o","20",,"
+Process finished with exit code 0
+",,"system","21746072","0"
+"r","21","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"21751890","0"
+"o","21",,"
+Process finished with exit code 0
+",,"system","21764326","0"
+"r","22","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"21838978","0"
+"o","22",,"Traceback (most recent call last):
+",,"stderr","21861994","0"
+"o","22",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 47, in <module>
+",,"stderr","21861994","0"
+"o","22",,"    turtle.right(angle())
+",,"stderr","21861994","0"
+"o","22",,"  File ""<string>"", line 5, in right
+",,"stderr","21861994","0"
+"o","22",,"turtle.Terminator
+",,"stderr","21861994","0"
+"o","22",,"
+Process finished with exit code 1
+",,"system","21862023","0"
+"r","23","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22003768","0"
+"o","23",,"Traceback (most recent call last):
+",,"stderr","22030131","0"
+"o","23",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 50, in <module>
+",,"stderr","22030131","0"
+"o","23",,"    turtle.circle(50)
+",,"stderr","22030132","0"
+"o","23",,"  File ""<string>"", line 8, in circle
+",,"stderr","22030132","0"
+"o","23",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1998, in circle
+",,"stderr","22030132","0"
+"o","23",,"    self.speed(speed)
+",,"stderr","22030139","0"
+"o","23",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2175, in speed
+",,"stderr","22030139","0"
+"o","23",,"    self.pen(speed=speed)
+",,"stderr","22030140","0"
+"o","23",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2460, in pen
+",,"stderr","22030140","0"
+"o","23",,"    self._update()
+",,"stderr","22030140","0"
+"o","23",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2661, in _update
+",,"stderr","22030140","0"
+"o","23",,"    self._update_data()
+",,"stderr","22030140","0"
+"o","23",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2647, in _update_data
+",,"stderr","22030140","0"
+"o","23",,"    self.screen._incrementudc()
+",,"stderr","22030140","0"
+"o","23",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1293, in _incrementudc
+",,"stderr","22030140","0"
+"o","23",,"    raise Terminator
+",,"stderr","22030140","0"
+"o","23",,"turtle.Terminator
+",,"stderr","22030140","0"
+"o","23",,"
+Process finished with exit code 1
+",,"system","22030184","0"
+"r","24","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22089690","0"
+"o","24",,"
+Process finished with exit code 0
+",,"system","22096474","0"
+"r","25","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22133022","0"
+"o","25",,"
+Process finished with exit code 0
+",,"system","22196552","0"
+"r","26","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22457970","0"
+"o","26",,"
+Process finished with exit code 0
+",,"system","22467519","0"
+"r","27","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22491274","0"
+"o","27",,"Traceback (most recent call last):
+",,"stderr","22495194","0"
+"o","27",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 47, in <module>
+",,"stderr","22495194","0"
+"o","27",,"    turtle.color(color1())
+",,"stderr","22495194","0"
+"o","27",,"  File ""<string>"", line 8, in color
+",,"stderr","22495194","0"
+"o","27",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2217, in color
+",,"stderr","22495194","0"
+"o","27",,"    pcolor = self._colorstr(pcolor)
+",,"stderr","22495194","0"
+"o","27",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2697, in _colorstr
+",,"stderr","22495194","0"
+"o","27",,"    return self.screen._colorstr(args)
+",,"stderr","22495194","0"
+"o","27",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1159, in _colorstr
+",,"stderr","22495194","0"
+"o","27",,"    raise TurtleGraphicsError(""bad color string: %s"" % str(color))
+",,"stderr","22495194","0"
+"o","27",,"turtle.TurtleGraphicsError: bad color string: #3c79b
+",,"stderr","22495194","0"
+"o","27",,"
+Process finished with exit code 1
+",,"system","22495226","0"
+"r","28","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22717478","0"
+"o","28",,"
+Process finished with exit code 0
+",,"system","22728015","0"
+"r","29","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22729649","0"
+"o","29",,"
+Process finished with exit code 0
+",,"system","22739286","0"
+"r","30","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"22741313","0"
+"o","30",,"
+Process finished with exit code 0
+",,"system","22751121","0"
+"r","31","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23002709","0"
+"o","31",,"
+Process finished with exit code 0
+",,"system","23016860","0"
+"r","32","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23082455","0"
+"o","32",,"
+Process finished with exit code 0
+",,"system","23096787","0"
+"r","33","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23109320","0"
+"o","33",,"
+Process finished with exit code 0
+",,"system","23122232","0"
+"r","34","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23125957","0"
+"o","34",,"
+Process finished with exit code 0
+",,"system","23140106","0"
+"r","35","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23161307","0"
+"o","35",,"Traceback (most recent call last):
+",,"stderr","23167038","0"
+"o","35",,"  File ""/Users/user/Documents/CS1400/turtlePlay/flower.py"", line 50, in <module>
+",,"stderr","23167038","0"
+"o","35",,"    turtle.circle(50)
+",,"stderr","23167038","0"
+"o","35",,"  File ""<string>"", line 8, in circle
+",,"stderr","23167038","0"
+"o","35",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1998, in circle
+",,"stderr","23167038","0"
+"o","35",,"    self.speed(speed)
+",,"stderr","23167038","0"
+"o","35",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2175, in speed
+",,"stderr","23167038","0"
+"o","35",,"    self.pen(speed=speed)
+",,"stderr","23167039","0"
+"o","35",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2460, in pen
+",,"stderr","23167039","0"
+"o","35",,"    self._update()
+",,"stderr","23167039","0"
+"o","35",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2661, in _update
+",,"stderr","23167039","0"
+"o","35",,"    self._update_data()
+",,"stderr","23167039","0"
+"o","35",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 2647, in _update_data
+",,"stderr","23167039","0"
+"o","35",,"    self.screen._incrementudc()
+",,"stderr","23167041","0"
+"o","35",,"  File ""/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/turtle.py"", line 1293, in _incrementudc
+",,"stderr","23167041","0"
+"o","35",,"    raise Terminator
+",,"stderr","23167041","0"
+"o","35",,"turtle.Terminator
+",,"stderr","23167041","0"
+"o","35",,"
+Process finished with exit code 1
+",,"system","23167074","0"
+"r","36","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23231311","0"
+"o","36",,"
+Process finished with exit code 0
+",,"system","23245589","0"
+"r","37","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23272727","0"
+"o","37",,"
+Process finished with exit code 0
+",,"system","23289461","0"
+"r","38","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23332068","0"
+"o","38",,"
+Process finished with exit code 0
+",,"system","23357629","0"
+"r","39","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23368877","0"
+"o","39",,"
+Process finished with exit code 0
+",,"system","23389058","0"
+"r","40","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23573483","0"
+"o","40",,"
+Process finished with exit code 0
+",,"system","23591436","0"
+"r","41","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23618520","0"
+"o","41",,"
+Process finished with exit code 0
+",,"system","23624602","0"
+"r","42","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23716611","0"
+"o","42",,"
+Process finished with exit code 0
+",,"system","23736482","0"
+"r","43","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"23802446","0"
+"o","43",,"
+Process finished with exit code 0
+",,"system","23827356","0"
+"r","44","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/flower.py",,"PythonRunner",,"1107476857","0"
+"o","44",,"
+Process finished with exit code 0
+",,"system","1107493581","0"
+"r","45","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1107505568","0"
+"r","46","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1107516659","0"
+"r","47","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1107624800","0"
+"o","47",,"apple
+",,"stdout","1107624830","0"
+"o","47",,"banana
+",,"stdout","1107624830","0"
+"o","47",,"cherry
+",,"stdout","1107624830","0"
+"o","47",,"
+Process finished with exit code 0
+",,"system","1107624853","0"
+"r","48","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1107699737","0"
+"r","49","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1107729172","0"
+"r","50","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1107814839","0"
+"r","51","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1108443509","0"
+"r","52","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1108593637","0"
+"r","53","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1108639521","0"
+"r","54","/usr/local/bin/python3 /Users/user/Documents/CS1400/turtlePlay/practice.py",,"PythonRunner",,"1108788469","0"

@@ -1,0 +1,31 @@
+:root{
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+}
+.paragraph{
+    padding: 0px 10px;
+    font-size: 20px;
+    background-color: var(--darkBlue);
+    border-radius: 4px;
+}
+.FAB{
+    background-color: var(--pink);
+    color: var(--cream);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    align-items: center;
+}
+.FAB:hover{
+    background-color: var(--darkBlue);
+    color: var(--cream);
+}
+.FAB:active{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+    background-color: var(--lightBlue);
+}

@@ -1,0 +1,72 @@
+:root{
+    --darkGrey: #2D2D2A;
+    --lightGrey: #4C4C47;
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--lightBlue);
+    color: var(--cream);
+    margin-left: 250px;
+}
+h1{
+    color: var(--darkGrey);
+    padding: 0px 10px;
+    font-size: 40px;
+}
+.sidenav {
+    height: 100%; 
+    width: 250px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: var(--darkGrey); 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--cream);
+    display: block;
+  }
+  .sidenav a:hover {
+    color: var(--pink);
+  }
+  
+.description {
+    padding: 0px 10px;
+    margin: 10px;
+    font-size: 20px;
+    border: 3px solid var(--cream);
+    background-color: var(--darkBlue);
+    border-radius: 4px;
+  }
+.codeBlocks{
+    padding: 10px;
+}
+.code{
+    border: 2px solid var(--cream);
+    border-radius: 4px;
+    padding: 12px;
+    max-width: max-content;
+    font-size: 16px;
+    background-color: var(--darkBlue);
+}
+h2{
+    font-size: 30px;
+}
+.googleLink{
+  text-decoration: none;
+  color: var(--cream);
+}
+.googleLink:hover{
+  color: var(--pink);
+}
+  

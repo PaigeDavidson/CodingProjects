@@ -1,0 +1,61 @@
+requirements specification
+    1. user will input:
+        Enter Starting Point X:
+        Enter Starting Point Y:
+        Enter Height:
+        Enter Width:
+    2. program will output a black and white chessboard in the turtle module based on user input with (x, y)
+        being the bottom left corner of the board
+
+system analysis
+    program will output a black and white chessboard in the turtle module based on user input with (x, y)
+    being the bottom left corner of the board
+
+    Each row will have 4 black squares
+
+Software design
+    - first import drawChessboard from chessboard module
+    Main function
+        1. get user input for x and y starting points, as well as height and width for the board
+        2. This is the given part of code - call drawChessboard() and create an if else if statement
+                - first, if no height and width parameters are given
+                - then if no height parameter is given
+                - then if no width parameter is given
+                - finally if user enters both width and height
+        3. call main()
+    - import turtle module into chessboard.py
+    drawChessboard()
+        1. function goes to a  given starting point and draws the outline of the chessboard
+            - this is the same code used in the drawRectangle function
+        2. calls the drawAllRectangles() function and fills in the outline with rectangles
+        3. make sure to use turtle.done() and turtle.hideturtle()
+        4. the formal parameters for the function must be startX, startY to match main function as well as
+            width=250 and height=250 so 250 is the default value
+    drawAllRectangles()
+        1. draw all rectangles in a given area from the drawChessboard() function
+        2. formal parameters must be the same as in drawChessboard() except the default 250 values
+        3. create variables so the given startX and startY values can be modified
+        4. create a for loop that will repeat 4 times (so there are 8 squares total and 4 black squares
+        5. create a nested for loop that calls the drawRectangle() function to draw a line of 4 squares
+            based on the given width each spaced equally apart
+        6. at the end of the outer for loop, cause the x variable to go back to the start position to be ready
+            for another line and add the height of two cubes to the y position so the next line isnt on top of
+            the first.
+        7. repeat this nested loop structure but move the starting x and y positions up the height of a cube
+            and over the width of a cube to create the alternating cubes
+
+    drawRectangle()
+        1. give formal parameters of (x, y, width, height) for a height and width and a starting point
+        2. draw a single rectangle using turtle module and making sure to fill the rectangle black
+        3. pick up the pen and move it to the starting position
+        4. change color to black and begin fill
+        5. using the goto() function and the formal parameters, create a rectangle based on the parameters
+Testing:
+    Run code with starting point 0, 0 height = 200, width = 100
+        chessboard should start with bottom left corner on (0,0) in the middle
+        board shape should be a rectangle but still be 8X8
+    passed
+    run code with starting point 50, 50 but no input for height and width
+         chessboard should start with bottom left corner on (50,50)
+         board should revert to the default values of 250, so it should make a square
+    failed - Forgot to set width and height = to 250 in drawChessboard() function, but then it passed

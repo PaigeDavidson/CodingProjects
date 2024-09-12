@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="FAB.css">
+    <script src="FAB.js" defer></script>
+    <title>FAB</title>
+</head>
+    <h1>Floating Action Button (FAB)</h1>
+<body>
+    <div class="sidenav">
+        <a href="/Users/user/CSSComponentLibrary/home.html">Home</a>
+        <a href="/Users/user/CSSComponentLibrary/navbar.html">Navbar</a>
+        <a href="/Users/user/CSSComponentLibrary/navigationDrawer.html">Navigation Drawer</a>
+        <a href="/Users/user/CSSComponentLibrary/button.html">Button</a>
+        <a href="/Users/user/CSSComponentLibrary/FAB.html">Floating Action Button (FAB)</a>
+        <a href="/Users/user/CSSComponentLibrary/imageCarousel.html">Image Carousel</a>
+        <a href="/Users/user/CSSComponentLibrary/loadingSpinners.html">Loading Spinners</a>
+    </div>
+
+    <div class="codeBlocks">
+
+    <div>
+        <h2>Example</h2>
+        <button class="FAB" id="FAB">
+            <!-- add your icon here -->
+            <a><span class="material-icons">add</span></a>
+        </button>
+    </div>
+
+    <h2>Description</h2>
+        <div class="code">
+            <p class="paragraph">
+                This is a Floating Action Button to be used anywhere on a web page, typically in the bottom left corner.
+            </p>
+            <p class="paragraph"> 
+                You can add any icon to the button you would like by changing the material icons 'add' to the name of 
+                any icon you find at: <a class = "googleLink" href="https://fonts.google.com/icons">Google Material Icons Site</a>
+            </p>
+            <p class="paragraph"> 
+                The colors can be changed by changing the colors in the CSS file in the :root{} section. 
+            </p>
+            <p class="paragraph"> 
+                It is important to remember to link the google stylesheet (if you are going to add an icon), 
+                your own CSS file, and your own javaScript file at the top of your HTML file in order for 
+                the component to work properly.
+            </p>
+        </div>
+
+    <div>
+        <h2>HTML</h2>
+        <pre class="code" id="FAB-html"></pre>
+    </div>
+    <div>
+        <h2>CSS</h2>
+        <pre class="code" id="FAB-css">
+:root{
+    --lightBlue: #848FA5;
+    --darkBlue: #5f6777;
+    --pink: #C14953;
+    --cream: #E5DCC5;
+}
+.FAB{
+    background-color: var(--pink);
+    color: var(--cream);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+    display: flex;
+    align-items: center;
+}
+.FAB:hover{
+    background-color: var(--darkBlue);
+    color: var(--cream);
+}
+.FAB:active{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19); 
+    background-color: var(--lightBlue);
+}
+
+        </pre>
+    </div>
+    <div>
+        <h2>JS</h2>
+        <pre class="code" id="FAB-js">
+const button = document.getElementById("FAB");
+
+button.addEventListener("click", () => {
+    console.log("button was clicked");
+    //add you button action here
+});
+        </pre>
+    </div>
+</div>
+</body>
+</html>

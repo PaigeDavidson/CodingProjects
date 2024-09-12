@@ -1,0 +1,100 @@
+:root{
+    --purple: #592851;
+    --teal: #3d6d73;
+    --mellowYellow: #d9b88f;
+    --lightTeal: #a4bfba;
+    --rose: #a66868;
+    --charcoal: #2e2e2e;
+
+    background-color: var(--teal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.centered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.top{
+    justify-content: flex-start;
+}
+
+/* search bar css */
+.searchContainer { 
+    display: flex; 
+    margin: 3px;
+    font-weight: 100;
+} 
+
+.searchContainer>input { 
+    background-color: white;
+    color: var(--charcoal);
+    font-weight: 400;
+    flex: 1; 
+    border-top-right-radius: 16px; 
+    border-bottom-right-radius: 16px; 
+    border: none;
+    padding-left: 16px; 
+} 
+
+.searchContainer>button { 
+    background-color: white;
+    color: var(--charcoal);
+    font-weight: 400;
+    border: none;
+    border-top-left-radius: 16px; 
+    border-bottom-left-radius: 16px; 
+    padding: 8px 16px; 
+    cursor: pointer; 
+} 
+
+.searchContainer>button:hover,  .searchContainer>button:focus{
+    background-color: var(--mellowYellow);
+    border: none;
+  }
+  .searchContainer>input:focus-visible,
+  .searchContainer>input:focus,
+  .searchContainer>button:focus,
+  .searchContainer>button:focus-visible {
+    outline: 2px auto var(--purple);
+  }
+
+/* quote css */
+.quote{
+    font-size: 20px;
+    border: 2px solid var(--purple);
+    background-color: var(--lightTeal);
+    padding: 8px;
+    margin: 15px;
+    border-radius: 8px;
+}
+.quote:hover, .pinned:hover, .quote:focus{
+    background-color: var(--mellowYellow);
+    border-color: var(--lightTeal);
+}
+
+.quote-content {
+    text-align: left;
+    margin: 10px;
+}
+
+.quote-author {
+    margin-top: auto; 
+    text-align: right;
+    margin: 10px;
+}
+.error{
+    border: none;
+    background-color: var(--mellowYellow);
+    padding: 8px;
+    margin: 10px;
+}
+
+#Message{
+    display: none;
+}

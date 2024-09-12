@@ -1,0 +1,18 @@
+Memory Bugs
+    1. In the first line, the import statement should import gameBoard instead of memoryBoard
+        The gameBoard class is not called memoryBoard, it is called gameBoard
+        then down when memoryBoard = MemoryBoard() it needs to be changed to
+        memoryBoard = GameBoard(rows, cols) so you don't get an error
+
+    2. In line 23 where you are creating the MemoryBoard object, the parameters are switched so the
+        rows and columns in the board are swapped
+
+    3. In line 34, you need to add the line of code: selectedCards.append((xPos, yPos)) because the right cards
+        were not flipped to clear the board after the previous players turn.
+
+    4. In line 38 you need to take the + 1 out of scores[playerTurn + 1] += 1 otherwise you get an out of range
+        error because the scores was 1 out of range of the list.
+
+    6. in lines 47 and 48, the 0,1 and the 1,0 need to be flipped so the wrong cards don't end up flipping
+
+    7. the player count keeps increasing and despite how many players are entered

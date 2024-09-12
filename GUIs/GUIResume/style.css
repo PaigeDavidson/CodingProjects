@@ -1,0 +1,101 @@
+body{
+    background-image: url(./deadHorsePoint.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1{
+    font-size: 40pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: rgb(32, 50, 35);
+    background-color: rgb(196, 146, 117);
+    padding: 25px;
+    text-align: left;
+    border: 8px solid rgb(81, 129, 147);
+    
+}
+#contactInfo{
+    font-style: italic;
+    font-size: 12pt;
+}
+main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(32, 50, 35);
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8px;
+    align-content: space-between;
+    border: 8px solid rgb(81, 129, 147);
+}
+#title{
+    border: 2px solid bisque;
+    font-weight: bold;
+    background: linear-gradient(45deg, rgb(81, 129, 147), rgb(233, 160, 133));
+    padding: 40px;
+    justify-content: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+#infoSections{
+    margin: 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    border: 4px solid bisque;
+    border-radius: 2px;
+    padding: 8px;
+    width:96%;
+}
+#degrees{
+    font-size: 20px;
+    text-align: center;
+    margin: 4px;
+    width: 250px; 
+    height: 200px; 
+    background-color: bisque;
+    border-radius: 8px;
+    padding: 8px;
+}
+#smallText{
+    font-size: 10px;
+}
+#jobs{
+    font-size: 20px;
+    margin: 4px;
+    width: 250px; 
+    height: 200px; 
+    background-color: bisque; 
+    border-radius: 8px;
+    padding: 8px;
+}
+#jobDescription{
+    font-size: 15px;
+}
+#techSection{
+    margin: 2px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    border: 4px solid bisque;
+    background-color: rgb(81, 129, 147);
+    border-radius: 2px;
+    padding: 8px;
+    width:96%;
+}
+#tech {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    position: relative;
+    overflow: hidden; 
+}
+
+#tech img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

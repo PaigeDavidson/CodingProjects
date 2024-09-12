@@ -1,0 +1,66 @@
+UML:
+***********************
+Blobber
+***********************
+-radius
+-originalRadius
+-height
+-color.lower()
+-name[0].upper() + name[1:].lower()
+-startTime
+-originalVolume = self.blobberVolume()
+***********************
+constructor:
+    define initializer with variables:
+    (self, name, color, radius, height)
+methods:
+    getcolor
+    setcolor
+    getname
+    setname
+    blobberVolume
+    blobberHappiness
+    feedBlobber
+    vitalsOK
+    blobberSpeak
+
+Wordinator Class Development Plan
+    user has to try to keep blobber alive by feeding it the perfect amount to keep it within 10% of its
+    100% happiness level, or it dies and program terminates
+    user also has the option to change the name and color as well as display the name and color or a
+    message form the blobber
+
+    This equates to a while loop in the main() that terminates either if the player quits or the blobber
+    to dust
+
+    to begin the class, there must be a constructor with initializer variables (self, name, color,
+    radius, height) - all variables are private excepts the created variable original volume
+
+    get color method
+        this method must return the private color variable
+    set color method
+        this method is used when user inputs a new color value
+        it must return the private color variable as the new color and display it in all lower case
+    get name method
+        this method must return the private name variable
+    set name method
+        this method is used when user inputs a new name
+        it must return the private color variable as the new color and display it capitalized
+    blobber volume
+        method used later in the happiness method
+        calculates current radius from the changing time and uses this value to compute a volume
+        returns the current volume
+    blobber happiness
+        calculates happiness level that is displayed as a percent in main() using original volume and
+        current volume from the blobber volume method
+    feed blobber
+        increases the radius of the blobber based on value of current radius at the time
+        returns a new radius
+    vitals ok
+        checks if the blobber's happiness levels is within 10% of 100% happiness and returns two values,
+        the happiness level, and a boolean value.
+        if the value is False (blobber is not in happy range) the program terminates and the blobber
+        turns to dust, it true the program continues
+    blobber speak
+        returns only two strings
+        tells the user the blobber's name, color and happiness level

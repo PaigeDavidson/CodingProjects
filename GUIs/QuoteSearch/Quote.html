@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="Quote.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="Message" aria-live="polite" aria-atomic="true"></div>
+
+    <main id="everything" class="centered">
+        <h1>Quote Search</h1>
+
+        <div class="searchContainer">
+            <button class="search-icon" id="searchButton" aria-label="This is a search button, hit enter or click the button to search for quotes">
+            <span class="material-icons">search</span>
+            </button>
+            <input type="text" id="searchBar" class="searchBar" placeholder="Marie Curie" aria-label="This is a search bar, type an author name and hit enter to search for quotes">
+        </div>
+
+        <div id="errorMessage" aria-label="error message"></div>
+
+        <div id="quote" class="quote" aria-label="This is a quote">
+            <div id="quote-content" class="quote-content"></div>
+            <div id="quote-author" class="quote-author"></div>
+        </div>
+    </main>
+
+    
+</body>
+</html>

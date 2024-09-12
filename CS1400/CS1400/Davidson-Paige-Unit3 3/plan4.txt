@@ -1,0 +1,36 @@
+Requirements Specification
+
+    display percentage that there is at least one elephant in the pen the zookeeper checks
+    display there is an elephant in the pen the zookeeper checks, what percentage of time are both
+    elephants in the pen
+    display based on simulation of zookeeper or custodian is correct
+
+    ask uer if they want to run the simulation again
+
+System Analysis
+    simulate nightly activity 100,000 times where two elephants randomly choose a pen to sleep in and a zookeeper
+    randomly checks one of the pens
+
+    there must be different outputs if the zookeeper checks a pen that has and elephant in it, if he checks a pen
+    with two elephants, or if he checks a pen with no elephants
+
+    if the one elephant scenario occurs 1/3 of the time and the two elephant scenario occurs 1/6 of the time, the
+    zookeeper is correct
+
+    if the zookeeper and the custodian disagree on the output, they have the option to run the simulation again
+
+System Design
+    import random module
+    create for loop to run simulation 1000000 times
+    in loop, simulate elephant and custodian choices using a random number generator for numbers 1-6
+
+    first we check what percentage is at least one elephant in the cage the zookeeper checks
+        this means the random number of the zookeeper and at least one of the elephants are the same
+    next we must check when this occurs, how often are there two elephants in the pen
+        for this to happen, all the random numbers must be the same
+    lastly we have to determine who was correct
+        for this we have to see if the first percentage is equal to 1/3 or 33.33% and if the second % is
+        equal to 1/6 or 16.66%
+
+    so we can repeat the loop if we want, we have to put the whole code into a while loop with a continue condition
+    to continue of user enters yes and to terminate if user enters no.

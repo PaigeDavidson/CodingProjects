@@ -1,0 +1,62 @@
+Requirements Specification
+    display 7 flunky numbers along with total time it takes to run program and the total loops run.
+        display time in seconds with two decimal points
+
+# Understanding The Problem / system analysis
+
+*   Program needs to find fluky numbers
+*   A fluky number is a number that is equal to (something special...)
+    *   Something special...
+    *   A random number
+    *   The first number generated after (doing some special seed stuff)
+    *   Special seed stuff
+        *   The seed is... the sum of all factors of a number (not including the number itself)
+        *   EX: Number is 12, factors are 1, 2, 3, 4, 6, 12, sumOfFactorsExcludingNum == 1 + 2 + 3 + 4 + 6 == 16
+
+*   Fluky example:
+    EX: 12
+    *   To figure out if 12 is a fluky number, we need to:
+        find factors of 12
+        sum factors excluding 12
+        random.seed(sum factors excluding 12)
+        generate random number with randint(0, 12)
+            if number generated = 12, 12 is a fluky number
+            if numer != 12, 12 is not a fluky number
+    EX: 25
+        THENUM = 25
+        THENUMFACSUM = 1 + 5
+        random.seed(THENUMFACSUM)
+        result = random.randint(0, 25)
+        result == 25
+
+## I understand my problem, how do I try to attack it? - system design
+
+*   I need to check each possible number from 1...10000
+    *   for i in range(1, 10001): ...
+    *   For each iteration of the forloop:
+        *   Check if i is a fluky number
+        *   if i is fluky: print number, increase number count, and quit if 7 numbers have been found
+        *   continue
+*   I need to sum the factors of a number!
+    *   find the factors!
+    *   if THENUM % POSSIBLEFACTOR == 0: POSSIBLEFACTOR is a factor of THENUM
+    *   facSum = 0
+    *   for possFactors in range(1, i): ...
+        *   if i % possFactor == 0: facSum += possFactor
+        *   else: # possFactor is not a factor
+
+    to reduce the number of loops:
+        I need to stop the loops once 7 flunky numbers are found
+        I can also divide theNumber in half when looking for factors because the largest factor a number can have
+        besides itself will be the number/2
+        I can also have the computer find two factors at once - if you divide the number by one factor, you get
+        another factor
+
+    to have proper loop counts and total time:
+        I need to put variables equal to zero before loop starts and add a += count into the loop so loop count
+        increases by one with each loop iteration
+
+        to have total time, I must import time module, start time at begining of loop and and it at the end of the
+        loop
+
+    finally, I must print the time and total loops

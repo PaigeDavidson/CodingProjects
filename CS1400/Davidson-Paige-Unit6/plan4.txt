@@ -1,0 +1,74 @@
+UML
+************
+Orbian
+************
+self.__HEAD_RADIUS = headRadius
+self.__BODY_RADIUS = bodyRadius
+self.__BODY_HEIGHT = bodyHeight
+self.__NAME = name
+self.__BIRTH_TIME = time.time()
+self.__adult = False
+************
+Constructor:
+    define initializer with parameters(self, name, headRadius, bodyRadius, bodyHeight)
+Methods:
+    def __getHeadVolume()
+    def __getBodyVolume()
+    def __ageCheck()
+    def __getHeadRadius()
+    def __getBodyRadius()
+    def __getBodyHeight()
+    def getAge()
+    def getName()
+    def getVolume()
+    def __len__()
+    def __add__()
+    def __gt__()
+
+Software Development Plan
+    - def __getHeadVolume()
+        - returns the volume of a circle based on self.__HEAD_RADIUS
+    - def __getBodyVolume()
+        - returns the volume of the body based on self.__BODY_RADIUS AND self.__BODY_HEIGHT
+    - def __ageCheck()
+        - determines whether the orbian is an adult or not based on a boolean variable the the orbian age
+    - def __getHeadRadius()
+        - returns the self.__HEAD_RADIUS
+    - def __getBodyRadius()
+        - returns the self.__BODY_RADIUS
+    - def __getBodyHeight()
+        - returns the self.__BODY_HEIGHT
+    - def getAge()
+        - returns an integer value based on the birth time that changes every 5 seconds
+    - def getName()
+        - create variable equal to self.__NAME
+        - capitalize this variable with the capitalize() function
+        - return the variable
+    - def getVolume()
+        - to get total volume, the volume of the head and hte volume of the body must be added
+        - the self.__getHeadVolume() and self.__getBodyVolume() are added
+        - the integer form of the result is returned
+Magic Methods
+    - def __len__()
+        - self.__getBodyHeight() and (self.__getHeadRadius() * 2) are used to get the entire length of the orbian
+        - the integer form o the result is returned
+    - def __add__()
+        - to create the new head and body radius, the two radius are added together (self and other) and divided by 4
+            to get the new radius that is 25% of the sum of the parents radius
+        - the same is done to create a new height, however this variable must be divided by 8 because the new
+            height must be 12.5% of the sum of the parents heights
+        - now to get the new name:
+            - a length variable msut be created to find the average length of the two parent names
+            - a variable with an empty string and an empty list are created
+            - two for loops are created to put the letters from both parents names in one list
+            - this list is then shuffled
+            - now another for loop is used to add letters to the empty string variable from zero to the length
+                that was pre determined above.
+            - the new orbian characteristics are returned with all the same parameters
+    - def __gt__()
+        - this method is used in the comparing orbians section
+        - an if else statment is used to compare the volume of the two orbians (self and other)
+        - boolean variables are returned based on the volume differences
+        - the getVolume(0 is used
+
+
