@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="static/theApp/style.css">
+</head>
+<body>
+    <!-- a page that displays the 5 most recent publicly shared destinations 
+    and their information. Links to the /users/new, and /sessions/new pages. 
+    If a user is signed in then it shows them a link to the /destinations 
+    endpoint instead -->
+    <h1>
+        <div id="title">
+            This is a Destination Tracker
+        </div>
+        {% if signedIn %}
+            <div class="links">
+                <a href="/destinations/">Your destinations</a>
+                <a href="/sessions/destroy/">Log out</a>
+            </div>
+        {% else %}
+            <div class="links">
+                <a href="/users/new/">Create Account</a>
+            </div>
+            <div class="links">
+                <a href="/sessions/new/">Log In</a>
+            </div>
+        {% endif %}
+    </h1>
+    <main>
+        {% if destinations %}
+            {% for destination in destinations %}
+                <div id="content">
+                    <a href="/destinations/{{destination.id}}/">{{destination.name}}</a>
+                    <div id="content">
+                        Review: {{destination.review}}
+                    </div>
+                    <div id="content">
+                        {{destination.rating}} / 10
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+                <p>There are no Destinations!</p>
+        {% endif %}
+    </main>
+</body>
+</html>

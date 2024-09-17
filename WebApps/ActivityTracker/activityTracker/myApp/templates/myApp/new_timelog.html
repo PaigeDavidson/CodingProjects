@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../static/myApp/style.css">
+</head>
+<body>
+    <h1>
+        {{activity.name}}
+    </h1>
+    <h2>New Time Log</h2>
+    <main>
+        <form action="/activity/{{activity.id}}/new_timelog/" method="post">
+            <label>
+                Start time
+                <input type="datetime-local" name="start_time" id="start_time">
+            </label>
+            <label>
+                End time
+                <input type="datetime-local" name="end_time" id="end_time">
+            </label>
+            <button>Save</button>
+        </form>
+    </main>
+    
+</body>
+</html>

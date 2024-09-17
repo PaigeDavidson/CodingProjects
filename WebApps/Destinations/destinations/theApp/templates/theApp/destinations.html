@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destinations</title>
+    <link rel="stylesheet" href="/static/theApp/style.css">
+</head>
+<body>
+    <h1>
+        <div id="title">
+            Destinations
+        </div>
+        <div id="links">
+            <a href="/destinations/new/">New Destination</a>
+            <a href="/">Home</a>
+            <a href="/sessions/destroy/">Log out</a>
+        </div>
+    </h1>
+    <main>
+        {% if destinations %}
+                {% for destination in destinations %}  
+                <div id="content">
+                    <a href="/destinations/{{destination.id}}/">{{destination.name}}</a>
+                    <div id="content">
+                        Review: {{destination.review}}
+                    </div>
+                    <div id="content">
+                        {{destination.rating}} / 10
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p>You don't have any Destinations!</p>
+            {% endif %}
+    </main>
+    
+</body>
+</html>

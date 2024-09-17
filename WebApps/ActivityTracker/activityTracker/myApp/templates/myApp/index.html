@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity Tracker</title>
+    <link rel="stylesheet" href="static/myApp/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Activity Tracker
+            <div class="headerLink">
+                <a href="/new_activity/">New Activity</a>
+            </div>
+        </h1>
+        <!-- <h2><a href="/new_activity/">New Activity</a></h2> -->
+    </header>
+    <main>
+        <div>
+            {% if activities %}
+                {% for activity in activities %}  
+                {{activity.content}}
+                <div class="activityBlock">
+                    <a href="/activity/{{activity.id}}/">{{activity.name}}</a>
+                    <div class="padding"> </div>
+                    <div class="time">
+                        <p>Time Spent: {{activity.time_spent}}</p>
+                    </div>
+                    <div class="padding"> </div>
+                </div>
+                <div class="padding"> </div>
+                {% endfor %}
+            {% else %}
+                <p>You don't have any activities!</p>
+            {% endif %}
+        </div>
+    </main>
+    
+</body>
+</html>

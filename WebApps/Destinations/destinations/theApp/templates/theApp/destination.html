@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>destination</title>
+    <link rel="stylesheet" href="/../static/theApp/style.css">
+</head>
+<body>
+    <h1>
+        {{destination.name}}
+    </h1>
+    <main>
+        <form action="/POST/destinations/{{destination.id}}/" method="post">
+            <label>
+                Name:
+                <input type="string" name="name" id="name" value="{{destination.name}}">
+            </label>
+            <label>
+                Review:
+                <input type="string" name="review" id="review" value="{{destination.review}}">
+            </label>
+            <label>
+                Rating out of 10:
+                <input type="number" name="rating" id="rating" value="{{destination.rating}}">
+            </label>
+
+            <input type="checkbox" name="share_publicly" id="share_publicly" {{ destination.share_publicly|yesno:"checked," }}>
+            <label for="share_publicly">Share Publicly?</label>
+            
+            <div class="button"><button>Save</button></div>
+        </form>
+
+        <form method="post" action="/destinations/{{ destination.id }}/destroy">
+            <input type="hidden" name="action" value="delete">
+            <div class="button"><button type="submit">Delete</button></div>
+        </form>
+    </main>
+    
+</body>
+</html>

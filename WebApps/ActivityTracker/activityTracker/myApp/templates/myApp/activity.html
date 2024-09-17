@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+    <link rel="stylesheet" href="../../static/myApp/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            {{activity.name}}
+        </h1>
+        <h2><a href="/activity/{{activity.id}}/new_timelog/">New TimeLog</a></h2>
+    </header>
+
+    <main>
+        <div>
+            {% if timeLogs %}
+                <div class="timelogHeader">
+                    <p>Sessions</p> 
+                </div>
+                <div class="padding"> </div>
+                <div class="timelogHeader">
+                    <p>Start At:</p> 
+                    <p>End At:</p>
+                    <p>Time Spent:</p>
+                </div>
+                <div class="padding"> </div>
+                {% for timelog in timeLogs %}  
+                <div class="ActivityTimeLog">
+                <p>{{timelog.start_time}}</p>
+                <div class="padding"> </div>
+                <p>{{timelog.end_time}}</p>
+                <div class="padding"> </div>
+                <p>{{timelog.time_spent}}</p>
+                </div>
+                <div class="padding"> </div>
+                {% endfor %}
+            {% else %}
+                <div class="ActivityTimeLog">
+                    <p>You don't have any time logs!</p>
+                </div>
+            {% endif %}
+        </div>
+        
+    </main>
+    
+</body>
+</html>

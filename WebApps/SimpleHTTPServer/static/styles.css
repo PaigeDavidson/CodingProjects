@@ -1,0 +1,12 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: white;
+    background-color: rgb(110, 2, 74);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  p {
+    color:rgb(131, 183, 159);
+  }

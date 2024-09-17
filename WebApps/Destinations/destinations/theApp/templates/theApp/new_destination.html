@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/../static/theApp/style.css">
+</head>
+<body>
+    <h1>
+        New Destination
+    </h1>
+    <main>
+        <form action="/destinations/new/" method="post">
+            <label>
+                Name:
+                <input type="string" name="name" id="name">
+            </label>
+            <label>
+                Review:
+                <input type="string" name="review" id="review">
+            </label>
+            <label>
+                Rating out of 10:
+                <input type="number" name="rating" id="rating">
+            </label>
+
+            <input type="checkbox" name="share_publicly" id="share_publicly">
+            <label for="share_publicly">Share Publicly?</label>
+            
+            <div class="button"><button>Save</button></div>
+        </form>
+    </main>
+    
+</body>
+</html>
