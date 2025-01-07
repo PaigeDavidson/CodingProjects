@@ -1,0 +1,156 @@
+Fname	Minit	Lname	Ssn	Bdate	Address	Sex	Salary	Super_ssn	Dno
+John	A	Doe	123456789	1965-04-12	123 Elm St	M	50000.00	NULL	1
+Bob	D	Green	333333333	1992-12-05	321 Maple St	M	55000.00	987654321	1
+Fname	Minit	Lname	Bdate
+Jane	B	Smith	1949-05-23
+Fname	Minit	Lname	Address
+John	A	Doe	123 Elm St
+Bob	D	Green	321 Maple St
+Fname	Minit	Lname	Dname	Dnumber
+John	A	Doe	Research	1
+Jane	B	Smith	Sales	2
+Alice	C	Brown	Administration	3
+Fname	Minit	Lname	Address
+Jane	B	Smith	456 Oak St
+Alice	C	Brown	789 Pine St
+Pnumber	Dnumber	Lname	Address	Bdate
+1	1	Doe	123 Elm St	1965-04-12
+3	3	Brown	789 Pine St	1980-09-12
+Fname	Minit	Lname
+Bob	D	Green
+Alice	C	Brown
+Fname	Minit	Lname	mgr_start_date
+Jane	B	Smith	2005-05-01
+Employee_FirstName	Employee_MInitial	Employee_LastName	Manager_FirstName	Manager_LastName
+Alice	C	Brown	Alice	Brown
+John	A	Doe	John	Doe
+Bob	D	Green	John	Doe
+Jane	B	Smith	Jane	Smith
+Fname	Minit	Lname	Pname	Dname
+Jane	B	Smith	ProjectY	Sales
+Alice	C	Brown	ProjectY	Sales
+
+*** The above text was automatically output by my Queries file when run on the database with the command: mysql -u root -p hw3 --batch --raw < queriesFile.sql > output.txt ***
+
+*** Below I will include the responses I got when I ran each query individually in the database, I think it is more readable ***
+
+*** NOTE: I assumed that by get names of employees you meant first middle initial and last names ***
+
+1. mysql> SELECT *
+    -> FROM EMPLOYEE 
+    -> WHERE Sex = 'M';
++-------+-------+-------+-----------+------------+--------------+------+----------+-----------+------+
+| Fname | Minit | Lname | Ssn       | Bdate      | Address      | Sex  | Salary   | Super_ssn | Dno  |
++-------+-------+-------+-----------+------------+--------------+------+----------+-----------+------+
+| John  | A     | Doe   | 123456789 | 1965-04-12 | 123 Elm St   | M    | 50000.00 | NULL      |    1 |
+| Bob   | D     | Green | 333333333 | 1992-12-05 | 321 Maple St | M    | 55000.00 | 987654321 |    1 |
++-------+-------+-------+-----------+------------+--------------+------+----------+-----------+------+
+2 rows in set (0.00 sec)
+
+2. mysql> SELECT Fname, Minit, Lname, Bdate
+    -> FROM  EMPLOYEE
+    -> WHERE Bdate < '1950-01-01';
++-------+-------+-------+------------+
+| Fname | Minit | Lname | Bdate      |
++-------+-------+-------+------------+
+| Jane  | B     | Smith | 1949-05-23 |
++-------+-------+-------+------------+
+1 row in set (0.00 sec)
+
+3. mysql> SELECT e.Fname, e.Minit, e.Lname, e.Address
+    -> FROM  EMPLOYEE e, DEPARTMENT d
+    -> WHERE e.Dno = d.Dnumber AND d.Dname = 'Research';
++-------+-------+-------+--------------+
+| Fname | Minit | Lname | Address      |
++-------+-------+-------+--------------+
+| John  | A     | Doe   | 123 Elm St   |
+| Bob   | D     | Green | 321 Maple St |
++-------+-------+-------+--------------+
+2 rows in set (0.00 sec)
+
+4. mysql> SELECT e.Fname, e.Minit, e.Lname, d.Dname, d.Dnumber
+    -> FROM  DEPARTMENT d, EMPLOYEE e
+    -> WHERE d.Mgr_ssn = e.Ssn;
++-------+-------+-------+----------------+---------+
+| Fname | Minit | Lname | Dname          | Dnumber |
++-------+-------+-------+----------------+---------+
+| John  | A     | Doe   | Research       |       1 |
+| Jane  | B     | Smith | Sales          |       2 |
+| Alice | C     | Brown | Administration |       3 |
++-------+-------+-------+----------------+---------+
+3 rows in set (0.00 sec)
+
+5. mysql> SELECT e.Fname, e.Minit, e.Lname, e.Address
+    -> FROM  EMPLOYEE e, WORKS_ON w
+    -> WHERE w.Pno = '2' AND w.Essn = e.Ssn;
++-------+-------+-------+-------------+
+| Fname | Minit | Lname | Address     |
++-------+-------+-------+-------------+
+| Jane  | B     | Smith | 456 Oak St  |
+| Alice | C     | Brown | 789 Pine St |
++-------+-------+-------+-------------+
+2 rows in set (0.00 sec)
+
+6. mysql> SELECT Pnumber, Dnumber, Lname, Address, Bdate
+    -> FROM  PROJECT, DEPARTMENT, EMPLOYEE
+    -> WHERE Plocation = 'Stafford' AND Dnum = Dnumber AND Mgr_ssn = Ssn;
++---------+---------+-------+-------------+------------+
+| Pnumber | Dnumber | Lname | Address     | Bdate      |
++---------+---------+-------+-------------+------------+
+|       1 |       1 | Doe   | 123 Elm St  | 1965-04-12 |
+|       3 |       3 | Brown | 789 Pine St | 1980-09-12 |
++---------+---------+-------+-------------+------------+
+2 rows in set (0.00 sec)
+
+7. mysql> SELECT Fname, Minit, Lname
+    -> FROM EMPLOYEE
+    -> EXCEPT
+    -> SELECT e.Fname, e.Minit, e.Lname
+    -> FROM EMPLOYEE e
+    -> JOIN DEPENDENT d ON e.Ssn = d.Essn;
++-------+-------+-------+
+| Fname | Minit | Lname |
++-------+-------+-------+
+| Bob   | D     | Green |
+| Alice | C     | Brown |
++-------+-------+-------+
+2 rows in set (0.01 sec)
+
+8. mysql> SELECT e.Fname, e.Minit, e.Lname, d.mgr_start_date
+    -> FROM  EMPLOYEE e, DEPARTMENT d
+    -> WHERE d.Dname = 'Sales' AND d.Dnumber = e.Dno
+    -> ORDER BY e.Fname ASC;
++-------+-------+-------+----------------+
+| Fname | Minit | Lname | mgr_start_date |
++-------+-------+-------+----------------+
+| Jane  | B     | Smith | 2005-05-01     |
++-------+-------+-------+----------------+
+1 row in set (0.00 sec)
+
+9. mysql> SELECT e.Fname AS Employee_FirstName, e.Minit AS Employee_MInitial, e.Lname AS Employee_LastName,
+    ->        m.Fname AS Manager_FirstName, m.Lname AS Manager_LastName
+    -> FROM  EMPLOYEE e, DEPARTMENT d, EMPLOYEE m
+    -> WHERE e.Salary > 500 AND e.Dno = d.Dnumber AND m.Ssn = d.Mgr_ssn
+    -> ORDER BY e.Lname ASC;
++--------------------+-------------------+-------------------+-------------------+------------------+
+| Employee_FirstName | Employee_MInitial | Employee_LastName | Manager_FirstName | Manager_LastName |
++--------------------+-------------------+-------------------+-------------------+------------------+
+| Alice              | C                 | Brown             | Alice             | Brown            |
+| John               | A                 | Doe               | John              | Doe              |
+| Bob                | D                 | Green             | John              | Doe              |
+| Jane               | B                 | Smith             | Jane              | Smith            |
++--------------------+-------------------+-------------------+-------------------+------------------+
+4 rows in set (0.00 sec)
+
+10. mysql> SELECT e.Fname, e.Minit, e.Lname, p.Pname, d.Dname
+    -> FROM  PROJECT p, EMPLOYEE e, WORKS_ON w, DEPARTMENT d
+    -> WHERE p.Plocation = 'Houston' AND e.Ssn = w.Essn AND w.Pno = p.Pnumber AND p.Dnum = d.Dnumber;
++-------+-------+-------+----------+-------+
+| Fname | Minit | Lname | Pname    | Dname |
++-------+-------+-------+----------+-------+
+| Jane  | B     | Smith | ProjectY | Sales |
+| Alice | C     | Brown | ProjectY | Sales |
++-------+-------+-------+----------+-------+
+2 rows in set (0.00 sec)
+
+
